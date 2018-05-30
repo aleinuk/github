@@ -192,7 +192,7 @@ input,textarea {
   margin-bottom: 20px;
   padding: 20px;
   outline: none;
-  width: 88%;
+  width: 100%;
 }
 input:hover,textarea:hover {
   background-color: #FFF;
@@ -253,8 +253,6 @@ ul {
 	align-content: center;
 }
 
-.grid1,.grid2,.grid3,.grid4
-{}
 
 
 
@@ -296,6 +294,11 @@ ul {
 
 	input,textarea {
 		padding:15px;
+	}
+
+	.gridwrapper1 {
+		grid-template-columns: repeat(auto-fit, 100%);
+		text-align: center;
 	}
 
 .features {
