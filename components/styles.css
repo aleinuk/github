@@ -88,8 +88,7 @@ button {
   margin-bottom: 20px;
   min-width: 150px;
   outline: none;
-  padding: 20px;
-  text-transform: uppercase;
+  padding: 10px;
   text-align: center;
   width: 100%;
 
@@ -101,7 +100,7 @@ button.primary {
 
 button.secondary {
   background:#fff;
-  color: rgba(0,41,54,0.7);
+  color: rgba(0,41,54,1);
 
 }
 button:hover {
@@ -188,7 +187,7 @@ input,textarea {
   border: 1px solid #fff;
   border-radius: 5px;
   display: block;
-  font-size: 18px;
+  font-size: 14px;
   margin-bottom: 20px;
   padding: 20px;
   outline: none;
@@ -216,6 +215,14 @@ input:hover,textarea:hover {
 	margin: 20px;
 
 }
+.modalbuttons .primary, .modalbuttons .secondary {
+		display: inline-block;
+		width: 47%;
+}
+.modalbuttons .primary{
+		margin-left: 20px;
+}
+
 nav li {
 	display: inline-block;
 	margin-right: 10px;
@@ -257,13 +264,21 @@ ul {
 
 
 /*If the browser window is 600px or smaller*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 667px) {
 	body {
 		font-size: 16px;
 	}
+
+	.modalbuttons .primary, .modalbuttons .secondary {
+			display: block;
+			width: 100%;
+	}
+	.modalbuttons .primary{
+			margin-left: 0;
+	}
+
 	button {
 	  margin-bottom: 20px;
-	  padding: 10px;
 
 	}
 
@@ -289,8 +304,6 @@ ul {
 		padding:20px;
 		overflow: hidden;
 	}
-	p {
-		padding:5px 0;}
 
 	input,textarea {
 		padding:15px;
@@ -310,5 +323,7 @@ ul {
 	display: block;
 	width: 100%;
 }
+
+
 
 }
