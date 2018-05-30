@@ -1,0 +1,146 @@
+a{
+color:rgba(23, 214, 216,1);
+font-weight: 700;
+text-decoration: none;
+}
+a:hover{
+color:rgba(23, 214, 216,0.6);
+transition: color 0.2s;
+}
+a:active{
+color:rgba(23, 214, 216,03);
+}
+a:visited{
+color:rgba(23, 214, 216,1);
+}
+a.logo{
+color: white;
+text-transform: uppercase;
+}
+body {
+background-color:#fafafa;
+color: rgba(0,41,54,1);
+font-family:'Montserrat',helvetica,arial,sans-serif;
+font-size: 18px;
+margin: auto;
+-webkit-font-smoothing: antialiased;
+text-rendering: optimizeLegibility;
+}
+button {
+  border-radius: 5px;
+  border: none;
+  box-shadow:  2px 2px 2px rgba(0,0,0,0.2);
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  min-width: 150px;
+  outline: none;
+  padding: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+
+}
+button.primary {
+  background-color:rgba(23, 214, 216,1);
+  color: #fff;
+}
+
+button.secondary {
+  background:#fff;
+  color: rgba(0,41,54,0.7);
+
+}
+button:hover {
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  transform: scale(0.9);
+  height: 95%;
+  transition: transform 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.card {
+  background:#fff;
+  padding: 40px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+
+ul.features li{
+  display: inline-block;
+  width: 25%;
+  padding: 20px;
+}
+figure{
+  margin: 0;
+  padding: 0;
+}
+
+footer a{
+  color: #fff;
+  font-size: 14px;
+}
+header,footer{
+  background-color: rgba(0,41,54,1);
+  color: #fff;
+  padding: 40px 40px 40px 80px;
+
+}
+
+h1 {
+  font-size:48px;
+  font-weight: 700;
+}
+
+h4 {
+text-transform: uppercase;
+}
+
+input,textarea {
+  background-color: #F0F6F8;
+  border: 1px solid rgba(0,41,54,0.1);
+  border-radius: 5px;
+  display: block;
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding: 10px;
+  outline: none;
+  width: 100%;
+}
+input:hover,textarea:hover {
+  background-color: #FFF;
+}
+.maincolorblue{
+background-color:rgba(0,41,54,1);
+color: white;
+display: block;
+padding: 20px;
+margin: 20px;
+
+}
+.maincolorgreen{
+background-color: rgba(23, 214, 216,1);
+color: white;
+display: block;
+padding: 20px;
+margin: 20px;
+
+}
+nav li {
+display: inline-block;
+margin-right: 10px;
+}
+
+placeholder {
+    color: rgba(0,41,54,0.1);
+}
+
+
+.wrapper {
+  padding: 80px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
