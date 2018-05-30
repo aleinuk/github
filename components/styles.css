@@ -48,6 +48,9 @@ table {
 	border-spacing: 0;
 }
 /*comps*/
+* {
+    box-sizing: border-box;
+}
 a{
 color:rgba(23, 214, 216,1);
 font-weight: 700;
@@ -239,6 +242,20 @@ ul {
   list-style-type: none;
   padding-left: 0px;
 }
+
+/*Experimental*/
+
+.gridwrapper1 {
+	display: inline-grid;
+	grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+	width: 100%;
+	align-content: center;
+}
+
+.grid1,.grid2,.grid3,.grid4
+{}
+
 
 
 /*If the browser window is 600px or smaller*/
