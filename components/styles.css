@@ -85,7 +85,7 @@ button {
   box-shadow:  2px 2px 2px rgba(0,0,0,0.2);
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin:20px 0 20px 0;
   min-width: 150px;
   outline: none;
   padding: 10px;
@@ -187,7 +187,7 @@ input,textarea {
   border: 1px solid #fff;
   border-radius: 5px;
   display: block;
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 20px;
   padding: 20px;
   outline: none;
@@ -197,6 +197,7 @@ input:hover,textarea:hover {
   background-color: #FFF;
   border: 1px solid rgba(0,41,54,0.1);
 }
+
 .maincolorblue{
 	background-color:rgba(0,41,54,1);
 	color: white;
@@ -229,6 +230,49 @@ nav li {
 }
 
 
+
+.overlay {
+	background-color: rgba(0,0,0,0.5);
+	padding: 20px;
+	position: relative;
+}
+
+@keyframes loading {
+		from {opacity:0;}
+		to {opacity:1;}
+}
+
+.loading{
+	animation-name:loading;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	animation-delay: 1s;
+}
+
+.loader {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal {
+	background: white;
+	padding:20px;
+	margin:20px;
+	border-radius: 5px;
+	min-width: 200px;
+}
+
+.modal h3 {
+	margin-bottom: 10px;
+}
+
 p {
   padding:20px 0;
 }
@@ -241,6 +285,10 @@ section {
   margin: 40px 0;
 }
 
+.special {
+	padding: 0;
+}
+
 .wrapper {
   padding: 80px;
 }
@@ -248,6 +296,17 @@ section {
 ul {
   list-style-type: none;
   padding-left: 0px;
+}
+
+.path {
+  stroke-dasharray: 2000;
+  animation: path 3s ease alternate infinite;
+}
+
+@keyframes path {
+  to {
+    stroke-dashoffset: 2000;
+  }
 }
 
 /*Experimental*/
