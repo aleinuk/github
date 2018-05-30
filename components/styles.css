@@ -1,3 +1,53 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.3;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*comps*/
 a{
 color:rgba(23, 214, 216,1);
 font-weight: 700;
@@ -61,10 +111,11 @@ button:hover {
 
 .card {
   background:#fff;
-  padding: 40px;
   box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-}
+  margin: 20px 0;
+  padding: 40px;
 
+}
 
 ul.features li{
   display: inline-block;
@@ -89,11 +140,23 @@ header,footer{
 
 h1 {
   font-size:48px;
-  font-weight: 700;
 }
 
-h4 {
-text-transform: uppercase;
+h2 {
+  font-size:36px;
+}
+
+h3 {
+  font-size:28px;
+}
+
+h3 {
+  font-size:20px;
+}
+
+h1,h2,h3,h4{
+  margin-bottom: 40px;
+  font-weight: 700;
 }
 
 input,textarea {
@@ -113,6 +176,7 @@ input:hover,textarea:hover {
 .maincolorblue{
 background-color:rgba(0,41,54,1);
 color: white;
+font-size: 18px;
 display: block;
 padding: 20px;
 margin: 20px;
@@ -121,6 +185,7 @@ margin: 20px;
 .maincolorgreen{
 background-color: rgba(23, 214, 216,1);
 color: white;
+font-size: 18px;
 display: block;
 padding: 20px;
 margin: 20px;
@@ -131,10 +196,18 @@ display: inline-block;
 margin-right: 10px;
 }
 
+
+p {
+  padding:20px 0;
+}
+
 placeholder {
     color: rgba(0,41,54,0.1);
 }
 
+section {
+  margin: 40px 0;
+}
 
 .wrapper {
   padding: 80px;
