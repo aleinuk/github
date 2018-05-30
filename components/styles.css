@@ -161,7 +161,7 @@ h1,h2,h3,h4{
 
 input,textarea {
   background-color: #F0F6F8;
-  border: 1px solid rgba(0,41,54,0.1);
+  border: 1px solid #fff;
   border-radius: 5px;
   display: block;
   font-size: 18px;
@@ -172,6 +172,7 @@ input,textarea {
 }
 input:hover,textarea:hover {
   background-color: #FFF;
+  border: 1px solid rgba(0,41,54,0.1);
 }
 .maincolorblue{
 background-color:rgba(0,41,54,1);
