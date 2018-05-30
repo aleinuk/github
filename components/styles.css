@@ -68,13 +68,13 @@ color: white;
 text-transform: uppercase;
 }
 body {
-background-color:#fafafa;
-color: rgba(0,41,54,1);
-font-family:'Montserrat',helvetica,arial,sans-serif;
-font-size: 18px;
-margin: auto;
--webkit-font-smoothing: antialiased;
-text-rendering: optimizeLegibility;
+	background-color:#fafafa;
+	color: rgba(0,41,54,1);
+	font-family:'Montserrat',helvetica,arial,sans-serif;
+	font-size: 18px;
+	margin: auto;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
 }
 button {
   border-radius: 5px;
@@ -118,10 +118,35 @@ button:hover {
 }
 
 ul.features li{
-  display: inline-block;
+	display: inline-block;
   width: 25%;
   padding: 20px;
 }
+
+.error {
+	border: 1px solid #EF8368;
+}
+input.error {
+	border-radius: 5px 5px 0 0;
+	margin-bottom: 0;
+
+}
+.error::placeholder {
+	color:#EF8368;
+}
+.errormsg {
+	background-color:#EF8368;
+	padding:6px;
+	border-radius: 2px;
+}
+
+p.errormsg {
+	font-size:14px;
+	color:white;
+	margin-bottom:20px;
+
+}
+
 figure{
   margin: 0;
   padding: 0;
@@ -166,35 +191,35 @@ input,textarea {
   display: block;
   font-size: 18px;
   margin-bottom: 20px;
-  padding: 10px;
+  padding: 20px;
   outline: none;
-  width: 100%;
+  width: 92%;
 }
 input:hover,textarea:hover {
   background-color: #FFF;
   border: 1px solid rgba(0,41,54,0.1);
 }
 .maincolorblue{
-background-color:rgba(0,41,54,1);
-color: white;
-font-size: 18px;
-display: block;
-padding: 20px;
-margin: 20px;
+	background-color:rgba(0,41,54,1);
+	color: white;
+	font-size: 18px;
+	display: block;
+	padding: 20px;
+	margin: 20px;
 
 }
 .maincolorgreen{
-background-color: rgba(23, 214, 216,1);
-color: white;
-font-size: 18px;
-display: block;
-padding: 20px;
-margin: 20px;
+	background-color: rgba(23, 214, 216,1);
+	color: white;
+	font-size: 18px;
+	display: block;
+	padding: 20px;
+	margin: 20px;
 
 }
 nav li {
-display: inline-block;
-margin-right: 10px;
+	display: inline-block;
+	margin-right: 10px;
 }
 
 
@@ -202,8 +227,8 @@ p {
   padding:20px 0;
 }
 
-placeholder {
-    color: rgba(0,41,54,0.1);
+::placeholder {
+	color: rgba(0,41,54,0.4);
 }
 
 section {
