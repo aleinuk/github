@@ -127,22 +127,17 @@ ul.features li{
 	border: 1px solid #EF8368;
 }
 input.error {
-	border-radius: 5px 5px 0 0;
 	margin-bottom: 0;
 
 }
 .error::placeholder {
 	color:#EF8368;
 }
-.errormsg {
-	background-color:#EF8368;
-	padding:6px;
-	border-radius: 2px;
-}
+
 
 p.errormsg {
 	font-size:14px;
-	color:white;
+	color:#EF8368;
 	margin-bottom:20px;
 
 }
@@ -193,7 +188,7 @@ input,textarea {
   margin-bottom: 20px;
   padding: 20px;
   outline: none;
-  width: 92%;
+  width: 88%;
 }
 input:hover,textarea:hover {
   background-color: #FFF;
@@ -242,4 +237,57 @@ section {
 ul {
   list-style-type: none;
   padding-left: 0px;
+}
+
+
+/*If the browser window is 600px or smaller*/
+@media only screen and (max-width: 600px) {
+	body {
+		font-size: 16px;
+	}
+	button {
+	  margin-bottom: 20px;
+	  padding: 10px;
+
+	}
+
+	h1 {
+	  font-size:36px;
+	}
+
+	h2 {
+	  font-size:24px;
+	}
+
+	h3 {
+	  font-size:20px;
+	}
+
+	h3 {
+	  font-size:16px;
+	}
+	.wrapper {
+		padding:40px;
+	}
+	.card {
+		padding:20px;
+		overflow: hidden;
+	}
+	p {
+		padding:5px 0;}
+
+	input,textarea {
+		padding:15px;
+	}
+
+.features {
+	text-align: center;	
+}
+
+	ul.features li {
+	padding:10px;
+	display: block;
+	width: 100%;
+}
+
 }
