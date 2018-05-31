@@ -149,6 +149,16 @@ figure{
   padding: 0;
 }
 
+footer h4 {
+	margin-bottom: 10px;
+
+}
+
+footer  nav li {
+
+	display: block;
+}
+
 footer a{
   color: #fff;
   font-size: 14px;
@@ -378,6 +388,11 @@ ul {
 
 	.mainnav {
 		float: none;
+
+	}
+
+	footer h4 {
+		margin-bottom: 10px;
 
 	}
 
