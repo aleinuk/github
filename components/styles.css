@@ -253,7 +253,7 @@ input:hover,textarea:hover {
 
 .mainnav {
 	display: inline-flex;
-	justify-content: center;
+	justify-content: flex-end;
 }
 
 .mainnav a {
@@ -414,6 +414,10 @@ ul {
 h1,h2,h3,h4 {
 		margin-bottom: 10px;
 
+	}
+
+	.mainnav {
+		justify-content: center;
 	}
 
 	.mainnav li {
