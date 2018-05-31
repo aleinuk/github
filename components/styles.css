@@ -224,6 +224,14 @@ input:hover,textarea:hover {
 		margin-left: 20px;
 }
 
+.mainnav {
+	float: right;
+}
+
+.mainnav a {
+	color: white;
+}
+
 nav li {
 	display: inline-block;
 	margin-right: 10px;
