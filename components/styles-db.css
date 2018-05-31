@@ -475,7 +475,7 @@ ul {
 	justify-content: center;
 }
 
-
+.menu {display: none;}
 
 
 /*If the browser window is 600px or smaller*/
@@ -483,6 +483,20 @@ ul {
 	body {
 		font-size: 16px;
 	}
+
+.sidebar {display: none;}
+
+header {
+	display: flex;
+	    justify-content: start;
+	    align-items: center;
+	    width: 100%;
+}
+
+.menu {margin-right: 20px;
+	display: block;
+
+}
 
 	.modalbuttons .primary, .modalbuttons .secondary {
 			display: block;
@@ -544,8 +558,7 @@ h1,h2,h3,h4 {
 	input,textarea {
 		padding:15px;
 	}
-
-	header, .gridwrapper1 {
+ .gridwrapper1 {
 		grid-template-columns: repeat(auto-fit, 100%);
 		text-align: center;
 	}
