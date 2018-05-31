@@ -168,7 +168,7 @@ header,footer{
 	display: inline-grid;
   background-color: rgba(0,41,54,1);
   color: #fff;
-  padding: 40px 40px 40px 80px;
+  padding: 40px;
 	grid-template-columns: 50% 50%;
   grid-gap: 20px;
 	width: 100%;
@@ -237,10 +237,6 @@ input:hover,textarea:hover {
 }
 .modalbuttons .primary{
 		margin-left: 20px;
-}
-
-.mainnav {
-	align-items: flex-end;
 }
 
 .mainnav a {
@@ -405,6 +401,8 @@ h1,h2,h3,h4 {
 
 	.mainnav li {
 		margin: 20px 0;
+		display: block;
+
 	}
 
 	input,textarea {
