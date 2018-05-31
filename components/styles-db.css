@@ -48,6 +48,109 @@ table {
 	border-spacing: 0;
 }
 
+/*dashboard grid*/
+header { grid-area: header;}
+.sidebar { grid-area: menu;}
+.main { grid-area: main; }
+footer { grid-area: footer;}
+
+.db-grid {
+	display: grid;
+  grid-template-areas:
+    'menu header header header header header'
+    'menu main main main main main'
+    'menu footer footer footer footer footer';
+}
+/*end dashboard grid*/
+
+
+
+.companylogo
+{
+color: white;
+font-weight: 700;
+margin-bottom: 20px;
+text-transform: uppercase;
+
+}
+
+header{
+font-weight:700;
+padding:20px;
+box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+z-index: 99;
+}
+
+.main {
+		padding:20px;
+
+}
+
+.date
+{font-size: 12px;
+color:rgba(0,41,54,0.5);
+margin-bottom: 10px;
+}
+
+.tinytitle {
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.bignumber {
+	font-size: 24px;
+	font-weight: 700;
+}
+.amount {
+	font-size: 18px;
+	font-weight: 700;
+	justify-content: flex-end;
+	display: flex;
+}
+
+.sidebar {
+	background-color:rgba(0,41,54,1);
+	padding:20px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+	z-index: 100;
+
+}
+.sidebar a {
+	display:block;
+	margin-bottom: 20px;
+
+}
+
+.sidebar a.active {
+	color: white
+}
+
+.card {
+  background:#fff;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  margin: 10px;
+  padding: 20px;
+
+}
+
+.description
+{display: grid;
+grid-template-columns: 5% 65% 25%;
+align-items: start;
+grid-gap: 2%;
+padding: 10px 0 10px 0;
+}
+
+.description p {
+	padding:0;
+}
+.icon{
+align-items: center;
+justify-content: flex-start;
+display: flex;
+}
+
+
 
 /*comps*/
 * {
@@ -72,11 +175,12 @@ color:rgba(23, 214, 216,1);
 	display: flex;
 	align-items: center;
 }
+
 body {
 	background-color:#fafafa;
 	color: rgba(0,41,54,1);
 	font-family:'Montserrat',helvetica,arial,sans-serif;
-	font-size: 18px;
+	font-size: 14px;
 	margin: auto;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
@@ -85,7 +189,7 @@ button {
   border-radius: 5px;
   border: none;
   box-shadow:  2px 2px 2px rgba(0,0,0,0.2);
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
   margin:20px 0 20px 0;
   min-width: 150px;
@@ -113,13 +217,7 @@ button:hover {
   transition-timing-function: ease-in-out;
 }
 
-.card {
-  background:#fff;
-  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-  margin: 20px 0;
-  padding: 40px;
 
-}
 
 ul.features li{
 	display: inline-block;
@@ -165,16 +263,7 @@ footer a{
   color: #fff;
   font-size: 14px;
 }
-header{
-	display: inline-grid;
-  background-color: rgba(0,41,54,1);
-  color: #fff;
-  padding: 40px;
-	grid-template-columns: auto auto;
-  grid-gap: 20px;
-	width: 100%;
 
-}
 
 .footer {
 	padding: 40px;
