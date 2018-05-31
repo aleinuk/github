@@ -164,16 +164,28 @@ footer a{
   color: #fff;
   font-size: 14px;
 }
-header,footer{
+header{
 	display: inline-grid;
   background-color: rgba(0,41,54,1);
   color: #fff;
   padding: 40px;
-	grid-template-columns: 50% 50%;
+	grid-template-columns: auto auto;
   grid-gap: 20px;
 	width: 100%;
 
 }
+
+footer nav{
+	display: inline-grid;
+  background-color: rgba(0,41,54,1);
+  color: #fff;
+  padding: 40px;
+	grid-template-columns: auto auto auto auto;
+  grid-gap:20px;
+	width: 100%;
+
+}
+
 
 h1 {
   font-size:48px;
@@ -319,7 +331,7 @@ svg{
 }
 
 .wrapper {
-  padding: 80px;
+  padding: 40px;
 }
 
 ul {
