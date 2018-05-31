@@ -376,6 +376,16 @@ ul {
 		padding: 0;
 	}
 
+	.mainnav {
+		float: none;
+
+	}
+
+	.mainnav li {
+		display: block;
+		margin: 20px 0;
+	}
+
 	input,textarea {
 		padding:15px;
 	}
