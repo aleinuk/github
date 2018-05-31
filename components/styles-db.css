@@ -82,9 +82,6 @@ text-transform: uppercase;
 
 }
 
-.groupedbydate {
-	margin-bottom: 20px;
-}
 
 header{
 background-color: #fff;
@@ -102,10 +99,8 @@ z-index: 99;
 
 .transaction {
 	margin-bottom: 10px;
-	border-bottom: 1px solid rgba(0,41,54,0.1);
 	padding: 10px 0 10px 0;
 }
-.transaction:last-child {border-bottom: none;padding-bottom: 0}
 
 .date
 {font-size: 12px;
@@ -150,8 +145,11 @@ margin-bottom: 10px;
   box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
   margin: 10px;
   padding: 20px;
+	overflow:auto;
 
 }
+
+
 
 .description
 {display: grid;
@@ -204,6 +202,11 @@ color:rgba(23, 214, 216,1);
 .logo{
 	display: flex;
 	align-items: center;
+}
+
+.small {
+	width: 200px;
+	float: left;
 }
 
 button {
@@ -385,8 +388,40 @@ nav li {
 .overlay {
 	background-color: rgba(0,0,0,0.5);
 	padding: 20px;
-	position: relative;
+	position:fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 2000;
+	animation-name: pop;
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
 }
+
+@keyframes pop {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+.learnmore {
+	font-weight: 700;
+}
+
+.learnmore li {
+	margin-bottom: 20px;
+	display: grid;
+	grid-template-columns:
+}
+
+.subnav {
+	margin-bottom: 20px
+}
+
+.data {
+	font-weight: 400;
+	color:rgba(0,41,54,0.5);
+}
+
+
 
 @keyframes loading {
 		from {opacity:0;}
@@ -412,13 +447,25 @@ nav li {
 	justify-content: center;
 }
 
+
+
 .modal {
 	background: white;
 	padding:20px;
 	margin:20px;
 	border-radius: 5px;
-	min-width: 200px;
+
+
 }
+
+
+
+/* The element to apply the animation to */
+
+
+
+
+
 
 .modal h3 {
 	margin-bottom: 10px;
@@ -432,9 +479,6 @@ p {
 	color: rgba(0,41,54,0.4);
 }
 
-section {
-  margin: 40px 0;
-}
 
 .special {
 	padding: 0;
@@ -483,6 +527,26 @@ ul {
 	body {
 		font-size: 16px;
 	}
+	.description
+	{display: grid;
+	grid-template-columns: auto;
+	align-items: start;
+	grid-gap: 2%;
+	padding: 10px 0 10px 0;
+	}
+
+	.db-grid {
+		display: block;
+	}
+
+	.description p {
+			margin-bottom: 20px;
+	}
+.amount {justify-content: flex-start;}
+
+.icon{
+		margin-bottom:  20px;
+	}
 
 .sidebar {display: none;}
 
@@ -511,6 +575,8 @@ header {
 
 	}
 
+
+
 	h1 {
 	  font-size:36px;
 	}
@@ -531,7 +597,7 @@ header {
 	}
 	.card {
 		padding:20px;
-		overflow: hidden;
+		overflow: auto;
 	}
 
 	.special {

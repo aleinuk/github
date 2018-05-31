@@ -71,6 +71,7 @@ color:rgba(23, 214, 216,1);
 .logo{
 	display: flex;
 	align-items: center;
+	width: 100%;
 }
 body {
 	background-color:#fafafa;
