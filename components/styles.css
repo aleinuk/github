@@ -239,6 +239,11 @@ input:hover,textarea:hover {
 		margin-left: 20px;
 }
 
+.mainnav {
+	display: inline-flex;
+	justify-content: center;
+}
+
 .mainnav a {
 	color: white;
 }
@@ -346,8 +351,8 @@ ul {
 
 
 
-/*If the browser window is 667px or smaller*/
-@media only screen and (max-width: 667px) {
+/*If the browser window is 700px or smaller*/
+@media only screen and (max-width: 700px) {
 	body {
 		font-size: 16px;
 	}
