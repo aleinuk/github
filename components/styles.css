@@ -408,10 +408,13 @@ h1,h2,h3,h4 {
 		padding:15px;
 	}
 
-	.gridwrapper1 {
+	header, .gridwrapper1 {
 		grid-template-columns: repeat(auto-fit, 100%);
 		text-align: center;
 	}
+
+	.logo
+	{justify-content: center;}
 
 .features {
 	text-align: center;
