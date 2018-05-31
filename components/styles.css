@@ -364,6 +364,10 @@ ul {
 		overflow: hidden;
 	}
 
+	.special {
+		padding: 0;
+	}
+
 	input,textarea {
 		padding:15px;
 	}
