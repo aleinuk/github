@@ -56,14 +56,14 @@ color:rgba(23, 214, 216,1);
 font-weight: 700;
 text-decoration: none;
 }
-a:hover{
+.mainnav a:hover,a:hover{
 color:rgba(23, 214, 216,0.6);
 transition: color 0.2s;
 }
-a:active{
+.mainnav a:hover,a:active{
 color:rgba(23, 214, 216,03);
 }
-a:visited{
+.mainnav a:hover,a:visited{
 color:rgba(23, 214, 216,1);
 }
 a.logo{
