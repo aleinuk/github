@@ -68,7 +68,6 @@ footer { grid-area: footer;}
 body {
 	color: rgba(0,41,54,1);
 	font-family:'Montserrat',helvetica,arial,sans-serif;
-	font-size: 14px;
 	margin: auto;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
@@ -97,9 +96,17 @@ z-index: 99;
 
 }
 
+.groupedbydate {
+	margin-bottom: 20px;
+	padding: 20px 0;
+	border-bottom:1px solid rgba(0,41,54,0.2);
+}
+.groupedbydate:last-child {
+	border: none;
+}
+
 .transaction {
-	margin-bottom: 10px;
-	padding: 10px 0 10px 0;
+padding: 10px 0
 }
 
 .date
