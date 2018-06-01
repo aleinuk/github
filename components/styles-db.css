@@ -393,9 +393,9 @@ nav li {
 
 .mobile a {
 	display: block;
-	margin-bottom: 40px;
+	padding: 20px 0;
+	margin-bottom: 20px;
 }
-
 
 #mobile-menu {
 	display: none;
@@ -563,6 +563,7 @@ ul {
 		animation-duration: 0.5s;
 		animation-timing-function: ease;
 		display: none;
+		overflow: hidden;
 	}
 
 
