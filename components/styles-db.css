@@ -61,6 +61,7 @@ footer { grid-area: footer;}
     'menu header header header header header'
     'menu main main main main main'
     'menu footer footer footer footer footer';
+	grid-template-columns: 20% 80%;		
 }
 /*end dashboard grid*/
 
