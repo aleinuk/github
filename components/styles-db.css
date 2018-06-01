@@ -61,7 +61,7 @@ footer { grid-area: footer;}
     'menu header header header header header'
     'menu main main main main main'
     'menu footer footer footer footer footer';
-	grid-template-columns: 20% 80%;		
+	grid-template-columns: 20% 80%;
 }
 /*end dashboard grid*/
 
@@ -168,8 +168,8 @@ padding: 10px 0 10px 0;
 }
 
 .description p {
-	padding:0;
-}
+	padding:0;}
+
 .icon{
 align-items: center;
 justify-content: flex-start;
@@ -224,7 +224,6 @@ button {
   font-size: 14px;
   font-weight: bold;
   margin:20px 0 20px 0;
-  min-width: 150px;
   outline: none;
   padding: 10px;
   text-align: center;
@@ -275,6 +274,7 @@ p.errormsg {
 	margin-bottom:20px;
 
 }
+
 
 figure{
   margin: 0;
@@ -391,7 +391,21 @@ nav li {
 	margin-right: 10px;
 }
 
+.mobile a {
+	display: block;
+	margin-bottom: 40px;
+}
 
+
+#mobile-menu {
+	display: none;
+}
+
+
+@keyframes slide {
+    from {right: 3000px;opacity: 0.2}
+    to {left:0;opacity:1;}
+}
 
 .overlay {
 	background-color: rgba(0,0,0,0.5);
@@ -492,9 +506,6 @@ p {
 	padding: 0;
 }
 
-svg{
-	max-width: 100%;
-}
 
 .wrapper {
   padding: 40px;
@@ -535,11 +546,28 @@ ul {
 	body {
 		font-size: 16px;
 	}
+
+.companylogo {
+	margin: 40px 0 40px 0;
+}
+
+
+	#mobile-menu {
+		background-color:rgba(0,41,54,1);
+		padding: 20px;
+		position:fixed;
+		width: 70%;
+		height: 100%;
+		z-index: 2002;
+		animation-name: slide;
+		animation-duration: 0.5s;
+		animation-timing-function: ease;
+		display: none;
+	}
+
+
 	.description
-	{display: grid;
-	grid-template-columns: auto;
-	align-items: start;
-	grid-gap: 2%;
+	{display: flex;
 	padding: 10px 0 10px 0;
 	}
 
@@ -548,9 +576,9 @@ ul {
 	}
 
 	.description p {
-			margin-bottom: 20px;
+			margin: 0 20px 20px 20px;
+
 	}
-.amount {justify-content: flex-start;}
 
 .icon{
 		margin-bottom:  20px;
@@ -558,12 +586,13 @@ ul {
 
 .sidebar {display: none;}
 
-header {
+header, .title{
 	display: flex;
 	    justify-content: start;
 	    align-items: center;
 	    width: 100%;
 }
+
 
 .menu {margin-right: 20px;
 	display: block;
@@ -579,10 +608,28 @@ header {
 	}
 
 	button {
-	  margin-bottom: 20px;
+	  border-radius: 5px;
+	  border: none;
+		background-color: rgba(23, 214, 216,1);
+	  box-shadow:  2px 2px 2px rgba(0,0,0,0.2);
+	  font-size: 14px;
+	  font-weight: bold;
+	  margin:20px 0 20px 0;
+	  outline: none;
+	  padding: 0;
+	  text-align: center;
+	  width: 100%;
 
 	}
 
+.hamburger {
+	width:46px;
+}
+
+	button {
+	  margin-bottom: 20px;
+
+	}
 
 
 	h1 {
