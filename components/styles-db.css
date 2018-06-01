@@ -168,7 +168,8 @@ padding: 10px 0 10px 0;
 }
 
 .description p {
-	padding:0;}
+	padding:0;
+width:100%}
 
 .icon{
 align-items: center;
@@ -178,8 +179,7 @@ display: flex;
 
 .main a {
 	display: block;
-
-	margin-top: 10px;
+	padding:10px;
 }
 
 .prev {
@@ -195,6 +195,7 @@ a{
 color:rgba(23, 214, 216,1);
 font-weight: 700;
 text-decoration: none;
+display: block;
 
 }
 .mainnav a:hover,a:hover{
@@ -393,8 +394,8 @@ nav li {
 
 .mobile a {
 	display: block;
-	padding: 20px 0;
-	margin-bottom: 20px;
+	padding: 20px;
+	margin-bottom: 10px;
 }
 
 #mobile-menu {
@@ -548,7 +549,7 @@ ul {
 	}
 
 .companylogo {
-	margin: 40px 0 40px 0;
+	margin: 20px 0 20px 0;
 }
 
 
