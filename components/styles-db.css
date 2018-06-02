@@ -102,10 +102,13 @@ z-index: 99;
 	margin-bottom: 20px;
 	padding: 20px 0;
 	border-bottom:1px solid rgba(0,41,54,0.2);
+
 }
-.groupedbydate:last-child {
-	border: none;
+
+.groupedbydate:last-of-type{
+	border-bottom: none;
 }
+
 
 .transaction {
 padding: 10px 0
@@ -230,6 +233,7 @@ button {
   padding: 10px;
   text-align: center;
   width: 100%;
+	background-color: #fafafa;
 
 }
 button.primary, button.primary a {
@@ -238,7 +242,7 @@ button.primary, button.primary a {
 }
 
 button.secondary, button.secondary a  {
-  background:#fff;
+  background:#fafafa;
   color: rgba(0,41,54,1);
 
 }
@@ -333,6 +337,7 @@ h3 {
 h1,h2,h3,h4{
   margin-bottom: 40px;
   font-weight: 700;
+	text-transform: uppercase;
 }
 
 input,textarea {
@@ -426,14 +431,9 @@ nav li {
     to {opacity:1;}
 }
 
-.learnmore {
-	font-weight: 700;
-}
 
 .learnmore li {
 	margin-bottom: 20px;
-	display: grid;
-	grid-template-columns:
 }
 
 .subnav {
@@ -613,7 +613,7 @@ header, .title{
 	button {
 	  border-radius: 5px;
 	  border: none;
-		background-color: rgba(23, 214, 216,1);
+		background-color: #fafafa;
 	  box-shadow:  2px 2px 2px rgba(0,0,0,0.2);
 	  font-size: 14px;
 	  font-weight: bold;
@@ -622,11 +622,14 @@ header, .title{
 	  padding: 0;
 	  text-align: center;
 	  width: 100%;
-
 	}
 
 .hamburger {
 	width:46px;
+}
+
+button.hamburger {
+	background-color: rgba(23, 214, 216,1);
 }
 
 	button {
@@ -650,6 +653,8 @@ header, .title{
 	h3 {
 	  font-size:16px;
 	}
+
+
 	.wrapper {
 		padding:10px;
 	}
@@ -665,7 +670,7 @@ header, .title{
 
 
 h1,h2,h3,h4 {
-		margin-bottom: 10px;
+		margin-bottom: 20px;
 
 	}
 
