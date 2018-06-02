@@ -78,9 +78,20 @@ body {
 {
 color: white;
 font-weight: 700;
-margin-bottom: 20px;
+margin-bottom: 10px;
 text-transform: uppercase;
 
+}
+
+.sandbox {
+	background-color: rgba(23, 214, 216,1);
+	font-size:10px;
+	text-transform: uppercase;
+	font-weight: 700;
+	width: 60px;
+	text-align:center;
+	margin-bottom: 40px;
+	border-radius: 2px;
 }
 
 
@@ -134,6 +145,7 @@ margin-bottom: 10px;
 	font-weight: 700;
 	justify-content: flex-end;
 	display: flex;
+	align-items: center;
 }
 
 .sidebar {
@@ -400,7 +412,7 @@ nav li {
 
 .mobile a {
 	display: block;
-	padding: 20px;
+	padding: 20px 20px 20px 0;
 	margin-bottom: 10px;
 }
 
@@ -440,11 +452,19 @@ nav li {
 	margin-bottom: 20px
 }
 
+.subnav button {
+	width: 200px;
+}
+
 .data {
 	font-weight: 400;
 	color:rgba(0,41,54,0.5);
 }
 
+.euro {
+	display:inline-block;
+	margin-left: 5px;
+}
 
 
 @keyframes loading {
@@ -546,13 +566,23 @@ ul {
 /*If the browser window is 600px or smaller*/
 @media only screen and (max-width: 600px) {
 	body {
-		font-size: 16px;
+		font-size: 14px;
 	}
 
 .companylogo {
-	margin: 20px 0 20px 0;
+	margin: 20px 0 10px 0;
 }
 
+.sandbox {
+	background-color: rgba(23, 214, 216,1);
+	font-size:10px;
+	text-transform: uppercase;
+	font-weight: 700;
+	width: 60px;
+	text-align:center;
+	margin-bottom: 20px;
+	border-radius: 2px;
+}
 
 	#mobile-menu {
 		background-color:rgba(0,41,54,1);
