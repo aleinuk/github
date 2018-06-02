@@ -564,6 +564,16 @@ ul {
 
 .menu {display: none;}
 
+.breadcrumbs {
+		font-size: 14px;
+		padding: 10px;
+}
+
+.breadcrumbs a{
+	display: inline-block;
+	padding: 20px;
+
+}
 
 /*If the browser window is 600px or smaller*/
 @media only screen and (max-width: 600px) {
@@ -571,8 +581,20 @@ ul {
 		font-size: 14px;
 	}
 
+	.breadcrumbs {
+			font-size: 14px;
+			padding: 5px;
+	}
+
+	.breadcrumbs a{
+		display: inline-block;
+		padding: 10px;
+
+	}
+
 .companylogo {
 	margin: 20px 0 10px 0;
+	font-size: 18px;
 }
 
 .sandbox {
