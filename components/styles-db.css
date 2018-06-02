@@ -72,6 +72,7 @@ body {
 	margin: auto;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
+	overflow: auto;
 }
 .companylogo
 {
