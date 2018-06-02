@@ -224,7 +224,7 @@ h1,h2,h3,h4{
 
 }
 
-input,textarea,button {
+input,textarea{
 	font-family: "Montserrat",helvetica,arial,sans-serif;
   background-color: #F0F6F8;
   border: 1px solid #fff;
