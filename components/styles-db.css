@@ -571,7 +571,7 @@ ul {
 
 .breadcrumbs a{
 	display: inline-block;
-	padding: 20px 0 20px 20px;
+	padding: 20px 0 20px 0;
 
 }
 
@@ -588,7 +588,7 @@ ul {
 
 	.breadcrumbs a{
 		display: inline-block;
-		padding: 10px 0 10px 10px;
+		padding: 10px 0 10px 0;
 
 	}
 
