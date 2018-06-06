@@ -160,6 +160,8 @@ p.errormsg {
 figure{
   margin: 0;
   padding: 0;
+	display: flex;
+	align-items: flex-start;
 }
 
 footer h4 {
@@ -201,13 +203,12 @@ footer nav{
 
 }
 
-
 h1 {
-  font-size:48px;
+  font-size:40px;
 }
 
 h2 {
-  font-size:36px;
+  font-size:32px;
 }
 
 h3 {
@@ -217,7 +218,6 @@ h3 {
 h3 {
   font-size:20px;
 }
-
 h1,h2,h3,h4{
   margin-bottom: 40px;
   font-weight: 700;
@@ -604,11 +604,35 @@ ul {
 }
 
 
+
 /*If the browser window is 600px or smaller*/
+
+@media only screen and (max-width: 750px) {
+	body {
+		font-size: 14px;}
+
+		h1 {
+		  font-size:24px;
+		}
+
+		h2 {
+		  font-size:18px;
+		}
+
+		h3 {
+		  font-size:16px;
+		}
+
+		h3 {
+		  font-size:14px;
+		}
+
+	}
+
 
 @media only screen and (max-width: 600px) {
 	body {
-		font-size: 16px;
+		font-size: 14px;
 	}
 
 	.modalbuttons .primary, .modalbuttons .secondary {
@@ -625,19 +649,19 @@ ul {
 	}
 
 	h1 {
-	  font-size:36px;
-	}
-
-	h2 {
 	  font-size:24px;
 	}
 
-	h3 {
-	  font-size:20px;
+	h2 {
+	  font-size:18px;
 	}
 
 	h3 {
 	  font-size:16px;
+	}
+
+	h3 {
+	  font-size:14px;
 	}
 	.wrapper {
 		padding:10px;
