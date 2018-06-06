@@ -588,6 +588,21 @@ ul {
 
 }
 
+@keyframes wind {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
+
+#windenergy {
+	transform: rotate(0deg);
+	transform-origin: 19px 19px;
+	animation-name: wind;
+	animation-iteration-count: infinite;
+	animation-duration: 0.7s;
+	animation-timing-function: linear;
+
+}
+
 
 /*If the browser window is 600px or smaller*/
 
