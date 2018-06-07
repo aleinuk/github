@@ -582,7 +582,7 @@ ul {
 	animation-name: drink;
 	animation-iteration-count: infinite;
 	animation-duration: 0.8s;
-r	animation-timing-function: linear;
+	animation-timing-function: linear;
 
 }
 
@@ -662,6 +662,61 @@ r	animation-timing-function: linear;
 		transform: translate(0, -200px);
 		opacity: 0;
 	}
+}
+
+
+@keyframes floate {
+	0% {
+		transform: translate(10px ,0);
+  opacity: 0;
+	 }
+
+	50% {
+		transform: translate(10px ,-400px);
+		  opacity: 1;
+}
+
+	100% {
+		transform: translate(10px, -600px);
+		  opacity: 0;
+	}
+}
+
+
+@keyframes floatc {
+	0% {
+		transform: translate(10px ,0);
+  opacity: 0;
+	 }
+
+	50% {
+		transform: translate(10px ,-600px);
+		  opacity: 0.6;
+}
+
+	100% {
+		transform: translate(10px, -1000px);
+		  opacity: 0;
+	}
+}
+
+#cloudc {
+	  opacity: 1;
+	transform:translate(0, 0);
+	transform-origin: 220px 220px;
+	animation-name: floatc;
+	animation-iteration-count: infinite;
+	animation-duration: 8s;
+	animation-timing-function: linear;
+}
+#cloude {
+	 opacity: 1;
+	transform:translate(0, 0);
+	transform-origin: 220px 220px;
+	animation-name: floate;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
+	animation-timing-function: linear;
 }
 
 
