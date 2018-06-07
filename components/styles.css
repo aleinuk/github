@@ -160,8 +160,6 @@ p.errormsg {
 figure{
   margin: 0;
   padding: 0;
-	display: flex;
-	align-items: flex-start;
 }
 
 footer h4 {
@@ -584,7 +582,7 @@ ul {
 	animation-name: drink;
 	animation-iteration-count: infinite;
 	animation-duration: 0.8s;
-	animation-timing-function: linear;
+r	animation-timing-function: linear;
 
 }
 
@@ -602,6 +600,196 @@ ul {
 	animation-timing-function: linear;
 
 }
+
+@keyframes baloon {
+	0% {transform: rotate(-14deg) translate(190px, 40px) ;}
+	50% {transform: rotate(0deg) translate(190px, 40px) ;}
+	100% {transform: rotate(-14deg) translate(190px, 40px) ;}
+}
+
+#baloon {
+	transform:translate(190px, 40px) rotate(0deg);
+	transform-origin: 220px 220px;
+	animation-name: baloon;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+}
+
+@keyframes float {
+	0% {
+		transform: translate(10px ,10px);
+     opacity: 0;
+	 }
+
+	50% {
+		transform: translate(10px ,-100px);
+		opacity: 0.5;}
+
+	100% {
+		transform: translate(10px, -200px);
+		opacity: 0;
+	}
+}
+
+@keyframes float6 {
+	0% {
+		transform: translate(-70px ,10px);
+     opacity: 0;
+	 }
+
+	50% {
+		transform: translate(-70px ,-60px);
+		opacity: 0.5;}
+
+	100% {
+		transform: translate(-70px, -110px);
+		opacity: 0;
+	}
+}
+
+@keyframes floatb {
+	0% {
+		transform: translate(0 ,10px);
+     opacity: 0;
+	 }
+
+	50% {
+		transform: translate(0 ,-100px);
+		opacity: 0.4;}
+
+	100% {
+		transform: translate(0, -200px);
+		opacity: 0;
+	}
+}
+
+
+#clouda {
+	transform:translate(0, 0);
+	transform-origin: 220px 220px;
+	animation-name: float;
+	animation-iteration-count: infinite;
+	animation-duration: 12s;
+	animation-timing-function: linear;
+}
+
+#cloudb {
+	opacity: 0;
+	transform:translate(20px, 40px) rotate(0deg);
+	animation-name: floatb;
+	animation-iteration-count: infinite;
+	animation-duration: 24s;
+	animation-timing-function: linear;
+}
+
+#cloud6 {
+		opacity: 0;
+	transform:translate(100px, 30px) rotate(0deg);
+	animation-name: float6;
+	animation-iteration-count: infinite;
+	animation-duration: 14s;
+	animation-timing-function: linear;
+}
+
+
+@keyframes flyl {
+
+	0% {transform:translate(67px, 23px) rotate(-360deg) translate(-67px, -23px);}
+	100% {transform:translate(67px, 23px) rotate(-361deg) translate(-67px, -23px);}
+
+}
+
+@keyframes flyb {
+	0% {transform:translate(100px, 329px) rotate(2deg);
+	opacity: 0}
+	50% {transform:translate(110px, 229px) rotate(20deg);
+	opacity: 1}
+	100% {transform:translate(100px, 129px) rotate(-10deg);
+	opacity: 0}
+}
+
+#kidbal {
+	opacity: 0;
+	animation-name: flyb;
+	animation-iteration-count: infinite;
+	animation-duration: 12s;
+	animation-delay: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes hole {
+0% {opacity: 0; }
+100% {opacity:1;}
+}
+
+#hole {
+	opacity:0;
+	animation-name: hole;
+	opacity: 1s;
+	animation-duration: 5s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+}
+
+
+@keyframes takeoff {
+
+0% {
+	transform:translate(35px,285px) rotate(-90deg) scale(0.4);
+	opacity: 1;
+}
+
+50% {
+	transform:translate(35px,285px) rotate(-90deg) scale(0.4);
+	opacity: 1;
+}
+
+100% {
+	transform:translate(600px,-3000px) rotate(-90deg) scale(0.4);
+	opacity:0;
+}
+
+
+}
+
+
+#rocket3{
+	opacity: 0;
+	transform:translate(35px,285px) rotate(-90deg) scale(0.4);
+	animation-name:takeoff;
+  animation-duration: 10s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 1s;
+	animation-iteration-count: 1;
+}
+
+
+
+@keyframes vibrate {
+0% {transform:translate(280px, 10px) rotate(90deg);}
+100% {transform:translate(282px, 12px) rotate(90deg);}
+
+}
+
+
+
+@keyframes flame2 {
+	0% {opacity: 0;}
+	100% {opacity:1}
+}
+
+
+#flame2 {
+	opacity:0;
+	animation-name:flame2;
+	animation-duration:0.1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	animation-delay:6s;
+}
+
 
 
 

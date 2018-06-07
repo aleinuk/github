@@ -180,7 +180,7 @@ margin-bottom: 10px;
 .description
 {display: grid;
 grid-template-columns: 5% 65% 25%;
-align-items: start;
+align-items: center;
 grid-gap: 2%;
 padding: 10px 0 10px 0;
 }
@@ -195,9 +195,9 @@ justify-content: flex-start;
 display: flex;
 }
 
-.main a {
+.morelink {
 	display: block;
-	padding:10px;
+	padding:10px 10px 10px 0;
 }
 
 .prev {
