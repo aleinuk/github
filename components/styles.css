@@ -287,25 +287,20 @@ nav li {
 	padding: 20px;
 	position: relative;
 }
-
 @keyframes loading {
-		from {opacity:0;}
-		to {opacity:1;}
+		from {transform:rotate(0deg)}
+		to {transform: rotate(360deg);}
 }
 
-.loading{
+#loader{
+	transform-origin: 45px 45px;
 	animation-name:loading;
-	animation-duration: 2s;
+	animation-duration: 1s;
 	animation-iteration-count: infinite;
-	animation-timing-function: ease;
-	animation-delay: 1s;
+	animation-timing-function: linear;
 }
 
 .loader {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
 	display: flex;
 	width: 100%;
 	align-items: center;
