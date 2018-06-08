@@ -789,8 +789,14 @@ fill:rgba(0,41,54,1);}
 
 0% {
  transform:translate(6px, 600px) rotate(-90deg);
-	opacity: 1;
+	opacity: 0;
 }
+
+15% {
+ transform:translate(6px, 350px) rotate(-90deg);
+	opacity: 0;
+}
+
 
 30% {
  transform:translate(6px, 220px) rotate(-90deg);
@@ -817,7 +823,7 @@ fill:rgba(0,41,54,1);}
 
 
 #rocket3{
-	opacity: 1;
+	opacity: 0;
   transform:translate(6px, 450px) rotate(-90deg);
 	animation-name:takeoff;
   animation-duration: 10s;
