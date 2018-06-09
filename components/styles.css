@@ -74,9 +74,9 @@ color:rgba(23, 214, 216,1);
 	width: 100%;
 }
 body {
-	background-color:#fafafa;
+	background-color:#f1f1f1;
 	color: rgba(0,41,54,1);
-	font-family:'Montserrat',helvetica,arial,sans-serif;
+	font-family:'Fira sans',helvetica,arial,sans-serif;
 	font-size: 18px;
 	margin: auto;
 	-webkit-font-smoothing: antialiased;
@@ -129,8 +129,11 @@ button:active {
   box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
   margin: 20px 0;
   padding: 40px;
+	border-radius: 5px;
 
 }
+
+em {font-weight: 700;}
 
 ul.features li{
 	display: inline-block;
@@ -223,7 +226,7 @@ h1,h2,h3,h4{
 }
 
 input,textarea{
-	font-family: "Montserrat",helvetica,arial,sans-serif;
+	font-family: "Fira sans",helvetica,arial,sans-serif;
   background-color: #F0F6F8;
   border: 1px solid #fff;
   border-radius: 5px;
