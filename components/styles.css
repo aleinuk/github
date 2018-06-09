@@ -323,7 +323,7 @@ nav li {
 }
 
 p {
-  padding:20px 0;
+  padding:0 0 20px 0;
 }
 
 ::placeholder {
@@ -963,13 +963,12 @@ fill:rgba(0,41,54,1);}
 	h3 {
 	  font-size:14px;
 	}
-	.wrapper {
-		padding:10px;
-	}
+
 	.card {
-		padding:20px;
 		overflow: hidden;
+		padding: 20px;
 	}
+
 
 	.special {
 		padding: 0;
@@ -1002,7 +1001,7 @@ h1,h2,h3,h4 {
 	}
 
 	.wrapper {
-	  padding: 20px;
+		padding:10px;
 	}
 
 
