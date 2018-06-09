@@ -55,7 +55,7 @@ table {
 }
 a{
 color:rgba(23, 214, 216,1);
-font-weight: 400;
+font-weight: 700;
 text-decoration: none;
 }
 .mainnav a:hover,a:hover{
@@ -92,7 +92,7 @@ button {
   padding: 10px;
   text-align: center;
   width: 100%;
-	background-color: #fafafa;
+	background-color: #fff;
 	font-size: 18px;
 
 }
@@ -124,7 +124,7 @@ button:active {
 
 
 .card {
-  background:#fff;
+  background:#fafafa;
   box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
   margin: 20px 0;
   padding: 40px;
@@ -132,7 +132,7 @@ button:active {
 
 }
 
-em {font-weight: 900;}
+em {font-weight: 700;}
 
 ul.features li{
 	display: inline-block;
@@ -220,7 +220,7 @@ h3 {
 }
 h1,h2,h3,h4{
   margin-bottom: 40px;
-  font-weight: 900;
+  font-weight: 700;
 
 
 }
