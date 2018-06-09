@@ -55,7 +55,7 @@ table {
 }
 a{
 color:rgba(23, 214, 216,1);
-font-weight: 700;
+font-weight: 400;
 text-decoration: none;
 }
 .mainnav a:hover,a:hover{
@@ -83,11 +83,9 @@ body {
 	text-rendering: optimizeLegibility;
 }
 button {
-  border-radius: 5px;
+	font-family:'Fira sans',helvetica,arial,sans-serif;  border-radius: 5px;
   border: none;
   box-shadow:  2px 2px 2px rgba(0,0,0,0.2);
-  font-size: 18px;
-  font-weight: bold;
   margin:20px 0 20px 0;
   min-width: 150px;
   outline: none;
@@ -95,6 +93,7 @@ button {
   text-align: center;
   width: 100%;
 	background-color: #fafafa;
+	font-size: 18px;
 
 }
 button.primary {
@@ -133,7 +132,7 @@ button:active {
 
 }
 
-em {font-weight: 700;}
+em {font-weight: 900;}
 
 ul.features li{
 	display: inline-block;
@@ -156,7 +155,7 @@ input.error {
 p.errormsg {
 	font-size:14px;
 	color:#EF8368;
-	margin-bottom:20px;
+	margin:10px 0;
 
 }
 
@@ -232,7 +231,7 @@ input,textarea{
   border: 1px solid #fff;
   border-radius: 5px;
   display: block;
-  font-size: 18px;
+	font-size: 18px;
   margin-bottom: 20px;
   padding: 20px;
   outline: none;
@@ -246,7 +245,6 @@ input:hover,textarea:hover {
 .maincolorblue{
 	background-color:rgba(0,41,54,1);
 	color: white;
-	font-size: 18px;
 	display: block;
 	padding: 20px;
 	margin: 20px;
@@ -255,7 +253,6 @@ input:hover,textarea:hover {
 .maincolorgreen{
 	background-color: rgba(23, 214, 216,1);
 	color: white;
-	font-size: 18px;
 	display: block;
 	padding: 20px;
 	margin: 20px;
@@ -946,6 +943,7 @@ fill:rgba(0,41,54,1);}
 
 	button {
 	  margin-bottom: 20px;
+		font-size: 14px;
 
 	}
 
@@ -994,6 +992,7 @@ h1,h2,h3,h4 {
 
 	input,textarea {
 		padding:15px;
+		font-size: 14px;
 	}
 
 	header, .gridwrapper1 {
@@ -1017,4 +1016,8 @@ h1,h2,h3,h4 {
 	padding:10px;
 	display: block;
 	width: 100%;
+}
+
+p {
+  padding:0 0 10px 0;
 }

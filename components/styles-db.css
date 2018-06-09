@@ -77,29 +77,29 @@ body {
 .companylogo
 {
 color: white;
-font-weight: 700;
+font-weight: 900;
 margin-bottom: 10px;
-text-transform: uppercase;
-font-size: 12px;
+font-size: 14px;
 word-break: break-word;
 
 }
 
 .sandbox {
 	background-color: rgba(23, 214, 216,1);
-	font-size:10px;
+	font-size:12px;
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 400;
 	width: 60px;
 	text-align:center;
 	margin-bottom: 40px;
 	border-radius: 2px;
+	padding:2px;
 }
 
 
 header{
 background-color: #fff;
-font-weight:700;
+font-weight:900;
 font-size: 20px;
 padding:20px;
 box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
@@ -144,16 +144,15 @@ margin-bottom: 10px;
 
 .tinytitle {
 	font-size: 12px;
-	font-weight: 700;
-	text-transform: uppercase;
+	font-weight: 900;
 }
 .bignumber {
 	font-size: 24px;
-	font-weight: 700;
+	font-weight: 900;
 }
 .amount {
 	font-size: 18px;
-	font-weight: 700;
+	font-weight: 900;
 	justify-content: flex-end;
 	display: flex;
 	align-items: center;
@@ -219,7 +218,7 @@ display: flex;
 }
 a{
 color:rgba(23, 214, 216,1);
-font-weight: 700;
+font-weight: 400;
 text-decoration: none;
 display: block;
 
@@ -245,14 +244,14 @@ color:rgba(23, 214, 216,1);
 }
 
 button {
+	font-family:'Fira sans',helvetica,arial,sans-serif;
   border-radius: 5px;
   border: none;
   box-shadow:  2px 2px 2px rgba(0,0,0,0.2);
-  font-size: 14px;
-  font-weight: bold;
   margin:20px 0 20px 0;
   outline: none;
   padding: 10px;
+	font-size: 14px;
   text-align: center;
   width: 100%;
 	background-color: #fafafa;
@@ -293,6 +292,7 @@ ul.features li{
 }
 input.error {
 	margin-bottom: 0;
+	font-size: 14px;
 
 }
 .error::placeholder {
@@ -363,7 +363,7 @@ h3 {
 h1,h2,h3,h4{
   margin: 20px 0 20px 0;
   font-weight: 900;
-	text-transform: uppercase;
+
 }
 
 input,textarea {
@@ -372,7 +372,6 @@ input,textarea {
   border: 1px solid #fff;
   border-radius: 5px;
   display: block;
-  font-size: 18px;
   margin-bottom: 20px;
   padding: 20px;
   outline: none;
@@ -613,7 +612,7 @@ ul {
 	background-color: rgba(23, 214, 216,1);
 	font-size:10px;
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 400;
 	width: 60px;
 	text-align:center;
 	margin-bottom: 20px;
@@ -782,4 +781,8 @@ h1,h2,h3,h4 {
 	padding:10px;
 	display: block;
 	width: 100%;
+}
+
+p {
+  padding:0 0 10px 0;
 }
