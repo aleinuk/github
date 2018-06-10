@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="15px" viewBox="0 0 24 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>mastercard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="timeline" transform="translate(-26.000000, -623.000000)" fill-rule="nonzero">
+            <g id="Group-15" transform="translate(21.000000, 613.000000)">
+                <g id="mastercard" transform="translate(5.000000, 10.000000)">
+                    <path d="M23.5058067,7.26663899 C23.5058067,11.2798924 20.2585718,14.5332776 16.2529038,14.5332776 C12.2472359,14.5332776 9,11.2798924 9,7.26663899 C9,3.25338497 12.2472359,0 16.2529038,0 C20.2585718,0 23.5058067,3.25338497 23.5058067,7.26663899 Z" id="path2997" fill="#F79F1A"></path>
+                    <path d="M14.5058066,7.26663899 C14.5058066,11.2798924 11.2585718,14.5332776 7.25290379,14.5332776 C3.24723585,14.5332776 0,11.2798924 0,7.26663899 C0,3.25338497 3.24723585,0 7.25290379,0 C11.2585718,0 14.5058066,3.25338497 14.5058066,7.26663899 Z" id="path2995" fill="#EA001B"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -55,7 +55,7 @@ table {
 }
 a{
 color:rgba(23, 214, 216,1);
-font-weight: 800;
+font-weight: 700;
 text-decoration: none;
 }
 .mainnav a:hover,a:hover{
@@ -84,7 +84,7 @@ body {
 }
 button {
 	font-family:'Open sans',helvetica,arial,sans-serif;
-	font-weight: 800;
+	font-weight: 700;
 	border-radius: 5px;
   border: none;
   box-shadow:  2px 2px 2px rgba(0,0,0,0.2);
@@ -135,7 +135,7 @@ button:active {
 
 }
 
-em {font-weight: 800;}
+em {font-weight: 700;}
 
 ul.features li{
 	display: inline-block;
@@ -223,7 +223,7 @@ h3 {
 }
 h1,h2,h3,h4{
   margin-bottom: 40px;
-  font-weight: 800;
+  font-weight: 700;
 
 
 }

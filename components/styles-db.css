@@ -77,7 +77,7 @@ body {
 .companylogo
 {
 color: white;
-font-weight: 800;
+font-weight: 700;
 margin-bottom: 10px;
 font-size: 14px;
 word-break: break-word;
@@ -87,7 +87,7 @@ word-break: break-word;
 .sandbox {
 	background-color: rgba(23, 214, 216,1);
 	font-size:12px;
-	font-weight: 900;
+	font-weight: 700;
 	width: 60px;
 	text-align:center;
 	margin-bottom: 40px;
@@ -98,7 +98,7 @@ word-break: break-word;
 
 header{
 background-color: #fafafa;
-font-weight:800;
+font-weight:700;
 font-size: 20px;
 padding:20px;
 box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
@@ -112,7 +112,7 @@ z-index: 99;
 
 .groupedbydate {
 	padding: 0 0 20px 0;
-	border-left:1px solid rgba(23, 214, 216,1);
+	border-left:1px solid rgba(0,41,54,1);
 
 }
 
@@ -122,13 +122,13 @@ z-index: 99;
 }
 
 .groupedbydate .date {
-	background: rgba(23, 214, 216,1);
+	background: rgba(0,41,54,1);
 	color: #fff;
 	max-width:190px;
 	border-radius: 0 10px 10px 0;
 	padding: 1px;
 	text-align:center;
-	font-weight: 800;
+	font-weight: 700;
 }
 
 .groupedbydate:last-of-type{
@@ -150,9 +150,7 @@ margin-bottom: 10px;
 }
 .amount {
 	font-size: 18px;
-	justify-content: flex-end;
 	display: flex;
-	align-items: center;
 }
 
 .sidebar {
@@ -180,24 +178,83 @@ margin-bottom: 10px;
 
 }
 
+.transaction {
 
+	border-bottom:1px solid rgba(0,41,54,0.1);
+}
 
 .description
 {display: grid;
-grid-template-columns: 10% 65% 25%;
+grid-template-columns: 10% 55% 30%;
+justify-content: center;
 align-items: center;
-padding: 10px 0 10px 20px;
+grid-gap: 2%;
+padding: 10px;
 }
 
 .description p {
-	padding:0;
-width:100%}
+width:100%;
+margin:0;
+}
+
+.mastercard{
+background-image: url("svg/mastercard.svg");
+}
+
+.cart {
+	background-image: url("svg/cart.svg");
+
+}
+
+.psp{
+	background-image: url("svg/psp.svg");
+
+}
+
+.comm{
+	background-image: url("svg/comm.svg");
+
+}
+
+
+.refundcomm{
+	background-image: url("svg/refundcomm.svg");
+
+}
+
+.refund{
+	background-image: url("svg/refund.svg");
+
+}
+
+
+.earnings{
+	background-image: url("svg/earnings.svg");
+
+}
+
+
+.bank{
+	background-image: url("svg/bank.svg");
+
+}
+
 
 .icon{
-align-items: center;
+background-repeat: no-repeat;
+background-position: center;
 justify-content: flex-start;
 display: flex;
+height:40px;
+width:40px;
+padding:20px;
 }
+
+
+.euro {
+	background-image: url("svg/euro.svg");
+}
+
 
 .morelink {
 	display: block;
@@ -215,7 +272,7 @@ display: flex;
 }
 a{
 color:rgba(23, 214, 216,1);
-font-weight: 800;
+font-weight: 700;
 text-decoration: none;
 display: block;
 
@@ -359,7 +416,7 @@ h3 {
 
 h1,h2,h3,h4{
   margin: 20px 0 20px 0;
-  font-weight: 800;
+  font-weight: 700;
 
 }
 
@@ -526,7 +583,7 @@ nav li {
 }
 
 p {
-  padding:0 0 20px 0;
+  margin:0 0 20px 0;
 }
 
 ::placeholder {
@@ -608,7 +665,7 @@ ul {
 .sandbox {
 	background-color: rgba(23, 214, 216,1);
 	font-size:10px;
-	font-weight: 900;
+	font-weight: 700;
 	width: 60px;
 	text-align:center;
 	margin-bottom: 20px;
@@ -630,23 +687,13 @@ ul {
 	}
 
 
-	.description
-	{display: flex;
-	padding: 10px 0 10px 20px;
-	}
 
 	.db-grid {
 		display: block;
 	}
 
-	.description p {
-			margin: 0 20px 20px 20px;
 
-	}
 
-.icon{
-		margin-bottom:  20px;
-	}
 
 .sidebar {display: none;}
 
@@ -677,7 +724,7 @@ header, .title{
 		background-color: #fafafa;
 	  box-shadow:  2px 2px 2px rgba(0,0,0,0.2);
 	  font-size: 14px;
-	  font-weight: 800;
+	  font-weight: 700;
 	  margin:20px 0 20px 0;
 	  outline: none;
 	  padding: 10px;
@@ -780,5 +827,5 @@ h1,h2,h3,h4 {
 }
 
 p {
-  padding:0 0 10px 0;
+  margin:0 0 10px 0;
 }
