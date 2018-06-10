@@ -77,7 +77,7 @@ body {
 .companylogo
 {
 color: white;
-font-weight: 700;
+font-weight: 800;
 margin-bottom: 10px;
 font-size: 14px;
 word-break: break-word;
@@ -87,8 +87,7 @@ word-break: break-word;
 .sandbox {
 	background-color: rgba(23, 214, 216,1);
 	font-size:12px;
-	text-transform: uppercase;
-	font-weight: 400;
+	font-weight: 900;
 	width: 60px;
 	text-align:center;
 	margin-bottom: 40px;
@@ -99,7 +98,7 @@ word-break: break-word;
 
 header{
 background-color: #fafafa;
-font-weight:700;
+font-weight:800;
 font-size: 20px;
 padding:20px;
 box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
@@ -129,7 +128,7 @@ z-index: 99;
 	border-radius: 0 10px 10px 0;
 	padding: 1px;
 	text-align:center;
-	font-weight: 700;
+	font-weight: 800;
 }
 
 .groupedbydate:last-of-type{
@@ -145,15 +144,12 @@ margin-bottom: 10px;
 
 .tinytitle {
 	font-size: 12px;
-	font-weight: 700;
 }
 .bignumber {
-	font-size: 24px;
-	font-weight: 700;
+	font-size: 32px;
 }
 .amount {
 	font-size: 18px;
-	font-weight: 700;
 	justify-content: flex-end;
 	display: flex;
 	align-items: center;
@@ -219,7 +215,7 @@ display: flex;
 }
 a{
 color:rgba(23, 214, 216,1);
-font-weight: 700;
+font-weight: 800;
 text-decoration: none;
 display: block;
 
@@ -363,14 +359,14 @@ h3 {
 
 h1,h2,h3,h4{
   margin: 20px 0 20px 0;
-  font-weight: 700;
+  font-weight: 800;
 
 }
 
 input,textarea {
 	font-family: 'Open sans',helvetica,arial,sans-serif;
   background-color: #F0F6F8;
-  border: 1px solid #fff;
+  border: 1px solid #fafafa;
   border-radius: 5px;
   display: block;
   margin-bottom: 20px;
@@ -612,8 +608,7 @@ ul {
 .sandbox {
 	background-color: rgba(23, 214, 216,1);
 	font-size:10px;
-	text-transform: uppercase;
-	font-weight: 400;
+	font-weight: 900;
 	width: 60px;
 	text-align:center;
 	margin-bottom: 20px;
@@ -682,7 +677,7 @@ header, .title{
 		background-color: #fafafa;
 	  box-shadow:  2px 2px 2px rgba(0,0,0,0.2);
 	  font-size: 14px;
-	  font-weight: bold;
+	  font-weight: 800;
 	  margin:20px 0 20px 0;
 	  outline: none;
 	  padding: 10px;
