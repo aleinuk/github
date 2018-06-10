@@ -125,10 +125,11 @@ z-index: 99;
 .groupedbydate .date {
 	background: rgba(23, 214, 216,1);
 	color: #fff;
-	max-width:220px;
+	max-width:190px;
 	border-radius: 0 10px 10px 0;
 	padding: 1px;
 	text-align:center;
+	font-weight: 700;
 }
 
 .groupedbydate:last-of-type{
