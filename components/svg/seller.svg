@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>seller</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="desk" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Nomo" transform="translate(-81.000000, -935.000000)">
+            <g id="seller" transform="translate(81.000000, 935.000000)">
+                <rect id="Rectangle-7" fill="#002936" x="0" y="0" width="60" height="60" rx="30"></rect>
+                <path d="M35.5932203,21.5 C35.5932203,25.0901667 32.8616949,28 29.4915254,28 C26.1213559,28 23.3898305,25.0901667 23.3898305,21.5 C23.3898305,17.9098333 26.1213559,15 29.4915254,15 C32.8616949,15 35.5932203,17.9098333 35.5932203,21.5 Z" id="Stroke-103" fill="#FFFFFF"></path>
+                <path d="M41.6949153,45 L16.2711864,45 C16.2711864,39.478 21.0127119,35 26.8644068,35 L31.1016949,35 C36.9533898,35 41.6949153,39.478 41.6949153,45 Z" id="Stroke-104" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
