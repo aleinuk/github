@@ -10,12 +10,11 @@
   </head>
     <body>
     <script src="menu.js"></script>
-      <div class="mobile" id="mobile-menu">
-        <div class="menu">
-          <button class="hamburger" onclick="off()">
+        <div id="mobile-menu">
+          <div class="menu">
+            <button class="hamburger" onclick="off()">
 
   <svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
 
       <defs></defs>
       <g id="desk" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -32,26 +31,26 @@
           </g>
       </g>
   </svg>
-      </button>
-      <nav class="mobile">
-        <div class="companylogo">Supermarketplace
-        </div><div class="sandbox">Sandbox</div>
-        <a href="index.html"> Landing UI </a>
-        <a href="overview.html"> Overview </a>
-        <a class="active" href="">Payments</a>
-        <a href="menu1"> Item1 </a>
-        <a href="menu1"> Item1 </a>
-        <a href="menu1"> Item1 </a>
-        </nav>
-        </div>
+</button>
+<nav class="mobile">
+  <div class="companylogo">Supermarketplace
+  </div><div class="sandbox">Sandbox</div>
+    <a href="index.html"> Landing UI </a>
+    <a class="active"href="overview.html"> Overview </a>
+    <a href="dashboard.html">Payments</a>
+    <a href="menu1"> Item1 </a>
+    <a href="menu1"> Item1 </a>
+    <a href="menu1"> Item1 </a>
+  </nav>
 
-      </div>
+</div>
+
+        </div>
       <div class="db-grid">
         <header>
           <div class="menu">
   <button class="hamburger" onclick="on()">
             <svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
 
                 <defs></defs>
                 <g id="desk" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -69,111 +68,41 @@
             </svg>
           </button>
           </div>
-          All details</header>
+
+          Overview</header>
       <div class="sidebar">
         <div class="companylogo">Supermarketplace
         </div><div class="sandbox">Sandbox</div>
           <nav>
             <a href="index.html"> Landing UI </a>
-            <a href="overview.html"> Overview </a>
-            <a class="active" href="">Payments</a>
+            <a class="active" href="overview.html"> Overview </a>
+            <a  href="dashboard.html">Payments</a>
             <a href="menu1"> Item1 </a>
             <a href="menu1"> Item1 </a>
             <a href="menu1"> Item1 </a>
             </nav>
       </div>
       <div class="main">
-        <div class="breadcrumbs"><a href="dashboard.html">Payments</a> &#62; <a href="history.html">Payment history
-        </a> &#62; All details </div>
-        <div class="card">
-      <div class="subnav">
 
-      <button><a href="history.html"> &larr; Go back  </a></button>
-    </div>
-    <section class="groupedbydate notimeline">
-    <h3>Refund details</h3>
-              <ul class="learnmore">
-                <li>Created
-                <div class="data">24.11.2018 15:06</div>
-                </li>
-                <li>Updated
-                <div class="data">n/a </div>
-                </li>
-                <li>Amount
-                <div class="data">&euro;18.00</div>
-                </li>
-                  <h4> Customer</h4>
-                <li>Transaction-1 ID
-                <div class="data">
-DBMrfJWpWLgeQllasdfad </div>
-                </li>
-                <li>State
-                <div class="data">Completed</div>
-                </li>
-                <li>Refunded to
-                <div class="data">MasterCard -1234 </div>
-                </li>
-                <li>Account
-                <div class="data">Hulk Hogan </div>
-                </li>
-                <li>Account ID
-                <div class="data">d98a8f9arf89af89aef</div>
-                </li>
-                <li>Wallet ID
-                <div class="data">98a8sdfd8daf</div>
-                </li>
-                <li>Balance before
-                <div class="data">&euro;180.00
-                </div>
-                </li>
-                <li>Balance after
-                <div class="data">&euro;162.00
-                </div>
-                </li>
-                  <h4> Your business</h4>
-                <li>Transaction-2 ID
-
-                <div class="data">DBMrfJWpWLgeQlll1232
-                </div>
-                </li>
-                <li>State
-
-                <div class="data">Completed
-                </div>
-                </li>
-                <li>Account
-                <div class="data">Supermarketplace
-                </div>
-                </li>
-                <li>Account ID
-                <div class="data">d98a889af89aefAAA
-                </div>
-                </li>
-                <li>Wallet ID
-98a8sdfd8dasdafasff
-                <div class="data">98a8sdfd8dasdafasff
-                </div>
-                </li>
-                <li>Balance before
-
-                <div class="data">&euro;1,020.00    </div>
-                </li>
-                <li>Balance after
-
-                <div class="data">
-&euro;1,002.00
-                </div>
-                </li>
-        </section>
-<div class="subnav">
-              <button>  <a href="history.html"> &larr; Go back  </a></button>
-              </div>
+          <div class="card earned">
+            <div class="calendar">
+              <a href="" class="active">All time</a>
+              <a href="">Week</a>
+              <a href="">Month</a>
+              <a href="">Quarter</a>
+              <a href="">Year</a>
+            </div>
+            Your net revenue
+            <div class="hugekpi">&euro;6,000,000.00</div>
+            Best seller
+            <div class="hugekpi">Freezers INC</div>
+          </div>
 
 
-
-              <!--end of modal card-->
-        </div>
-        <!--End of wrapper-->
+      <footer></footer>
       </div>
+        <!--end of wrapper-->
+      </div>
+
     </body>
 </html>
