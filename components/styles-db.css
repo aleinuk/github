@@ -315,7 +315,7 @@ height:40px;
 }
 a{
 color:rgba(23, 214, 216,1);
-font-weight: 700;
+font-weight: 400;
 text-decoration: none;
 display: block;
 
@@ -521,40 +521,18 @@ nav li {
 
 .mobile a {
 	display: block;
-	padding: 20px 20px 20px 0;
-	margin-bottom: 10px;
-}
-
-.mobile a.active {
-	color: #fff;
-}
-
-#mobile-menu {
-	display: none;
-}
-
-
-@keyframes slide {
-    from {right: 3000px;opacity: 0.2}
-    to {left:0;opacity:1;}
-}
-
-.overlay {
-	background-color: rgba(0,0,0,0.5);
 	padding: 20px;
-	position:fixed;
-	width: 100%;
-	height: 100%;
-	z-index: 2000;
-	animation-name: pop;
-	animation-duration: 0.5s;
-	animation-timing-function: ease;
+	margin-bottom: 10px;
+	color: #fff;
+	font-size: 18px;
+
 }
 
-@keyframes pop {
-    from {opacity:0;}
-    to {opacity:1;}
+.mobile a:hover{
+	color: rgba(255,255,255,0.6);
 }
+
+
 
 
 .learnmore li {
@@ -686,6 +664,8 @@ ul {
 
 }
 
+.menu {display: none;}
+
 /*If the browser window is 600px or smaller*/
 @media only screen and (max-width: 600px) {
 	body {
@@ -703,9 +683,12 @@ ul {
 
 	}
 
+
+
+
 .companylogo {
-	margin: 20px 0 10px 0;
-	font-size: 18px;
+	margin: 20px;
+	font-size: 20px;
 }
 
 .sandbox {
@@ -713,25 +696,11 @@ ul {
 	font-size:10px;
 	font-weight: 700;
 	width: 60px;
-	text-align:center;
 	margin-bottom: 20px;
 	border-radius: 2px;
+	vertical-align: middle;
+	color: rgba(0,41,54,1);
 }
-
-	#mobile-menu {
-		background-color:rgba(0,41,54,1);
-		padding: 10px;
-		position:fixed;
-		width: 100%;
-		height: 100%;
-		z-index: 2002;
-		animation-name: slide;
-		animation-duration: 0.3s;
-		animation-timing-function: ease;
-		display: none;
-		overflow: hidden;
-		position: absolute;
-	}
 
 
 
@@ -753,13 +722,64 @@ header, .title{
 
 header {
 	padding: 10px;
+	 height: 80px;
+
+}
+
+
+
+	.menu {
+		display: block;
+		right: 20px;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+}
+
+#mobile-menu {
+	display: none;
+}
+
+#mobile-menu {
+	background-color:rgba(0,41,54,1);
+	padding: 80px 20px 20px 20px;
+	width: 100%;
+	height: 100%;
+	z-index: 3000;
+	animation-name: slide;
+	animation-duration: 0.3s;
+	animation-timing-function: ease;
+	overflow: hidden;
+	position: absolute;
+	opacity: 0.95;
+	text-align:center;
+	display: none;
 }
 
 
-.menu {margin-right: 20px;
-	display: block;
-
+@keyframes slide {
+    from {right: 3000px;opacity: 0.2}
+    to {left:0;opacity:1;}
 }
+
+.overlay {
+	background-color: rgba(0,0,0,0.5);
+	padding: 20px;
+	position:fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 2000;
+	animation-name: pop;
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+}
+
+@keyframes pop {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+
 
 	.modalbuttons .primary, .modalbuttons .secondary {
 			display: block;
@@ -785,6 +805,9 @@ header {
 
 	.hamburger {
 		width:44px;
+		position: absolute;
+		right:20px;
+		top:20px;
 
 	}
 
@@ -794,6 +817,7 @@ header {
 		color: #fff;
 		font-size: 18px;
 		min-width:44px;
+		margin: 0;
 	}
 
 	button {
