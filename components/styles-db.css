@@ -315,7 +315,7 @@ height:40px;
 }
 a{
 color:rgba(23, 214, 216,1);
-font-weight: 400;
+font-weight: 700;
 text-decoration: none;
 display: block;
 
@@ -422,6 +422,7 @@ footer  nav li {
 footer a{
   color: #fff;
   font-size: 14px;
+	font-weight: 400;
 }
 
 
