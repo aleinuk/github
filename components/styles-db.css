@@ -442,22 +442,28 @@ footer nav{
 
 h1 {
   font-size:40px;
+
+  margin-bottom: 40px;
 }
 
 h2 {
   font-size:32px;
+	  margin-bottom: 20px;
 }
 
 h3 {
   font-size:28px;
+	margin-bottom: 20px;
 }
+
+
 
 h4 {
   font-size:20px;
+	 margin-bottom: 20px;
 }
 
 h1,h2,h3,h4{
-  margin: 20px 0 20px 0;
   font-weight: 800;
 
 }
