@@ -29,9 +29,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1.3;
-}
+
 ol, ul {
 	list-style: none;
 }
@@ -73,7 +71,7 @@ transition: color 0.2s;
 a{
 color:rgba(23, 214, 216,1);
 text-decoration: none;
-font-weight: 400;
+font-weight: 700;
 }
 
 a:hover{
@@ -167,6 +165,7 @@ footer p {
 .disclaimer a {
 	font-size: 12px;
 	padding: 0;
+	font-weight: 800;
 }
 
 .card {
@@ -203,11 +202,10 @@ ul.features li{
 }
 
 #cookies p {
-	padding: 0;
+	margin: 0;
 }
 
 #cookies a {
-	font-weight: 400;
 	color: #fff;
 }
 
@@ -218,6 +216,70 @@ input.error {
 	margin-bottom: 0;
 
 }
+/*checkbox*/
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  background-color: #F0F6F8;
+	border:1px solid rgba(23, 214, 216,1);
+	border-radius: 2px;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #fff;
+	border:1px solid rgba(23, 214, 216,1);
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: rgba(23, 214, 216,1);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+/*checkbox*/
+
+
 .error::placeholder {
 	color:#EF8368;
 }
@@ -289,29 +351,31 @@ footer nav{
 
 h1 {
   font-size:40px;
+
+  margin-bottom: 40px;
 }
 
 h2 {
   font-size:32px;
+	  margin-bottom: 20px;
 }
 
 h3 {
-  font-size:28px;
+  font-size:24px;
+	margin-bottom: 20px;
 }
-.devfeatures h3 {
-	margin: 0;
-}
+
 
 
 h4 {
   font-size:20px;
+	 margin-bottom: 20px;
 }
 h1,h2,h3,h4{
-  margin-bottom: 40px;
   font-weight: 800;
 
-
 }
+
 
 input,textarea{
 	font-family: "Open sans",helvetica,arial,sans-serif;
@@ -408,7 +472,7 @@ input:hover,textarea:hover {
 }
 
 p {
-  margin:0 0 20px 0;
+  margin:0 0 40px 0;
 }
 
 ::placeholder {
@@ -442,23 +506,116 @@ ul {
 	vertical-align: middle;
 }
 
+.API {
+	background-image: url(svg/API.svg);
+
+
+}
+
 .seller {
 	background-image: url(svg/seller.svg);
-	    height: 60px;
-	    width: 60px;
-	    background-position: center center;
-	    background-repeat: no-repeat;
-	    display: block;
-	    margin-bottom: 20px;
 
 }
 
-.path {
+
+.graphic {
+	height: 120px;
+	width: 120px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: block;
+	margin-bottom: 20px;
+
+}
+
+.psd2{
+	background-image: url(svg/psd2.svg);
+
+}
+
+.flexible{
+	background-image: url(svg/flexible.svg);
+
+}
+
+.devs{
+	background-image: url(svg/devs.svg);
+
+
+}
+
+
+.steps{
+	background-image: url(svg/steps.svg);
+
+
+}
+
+.adminpanel{
+	background-image: url(svg/adminpanel.svg);
+
+
+}
+
+.currencies{
+	background-image: url(svg/currencies.svg);
+
+
+}
+
+.sellers{
+	background-image: url(svg/sellers.svg);
+
+
+}
+
+.humansupport{
+	background-image: url(svg/humansupport.svg);
+
+
+}
+
+
+
+.support {
+	background-image: url(svg/support.svg);
+
+
+}
+
+.compliance {
+	background-image: url(svg/compliance.svg);
+
+
+}
+
+
+
+
+
+.benefits li {
+
+	background-image: url(svg/benefitsok.svg);
+	background-position: left center;
+	background-repeat: no-repeat;
+	display: block;
+	margin-bottom: 20px;
+	padding-left: 40px;
+}
+
+
+.devnav a {
+	display: inline-block;
+	padding:10px 10px 10px 0;
+	margin-right: 20px;
+}
+
+#hot1{
   stroke-dasharray: 2000;
-  animation: path 3s ease alternate infinite;
+  animation: hot1 3s linear infinite;
 }
 
-@keyframes path {
+@keyframes hot1 {
   to {
     stroke-dashoffset: 2000;
   }
@@ -474,6 +631,18 @@ ul {
 	width: 100%;
 	align-content: center;
 	justify-content: center;
+}
+
+figure.article, figure.overview{
+	display:flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+
+.grid {
+
+	margin-bottom:20px;
 }
 
 /*animation*/
@@ -506,7 +675,7 @@ ul {
 	animation-iteration-count: infinite;
 	animation-duration: 30s;
 	transform: rotate(0deg);
-  transform-origin: center;
+  transform-origin: 225px 225px;
 	animation-timing-function: linear;
 }
 
@@ -683,20 +852,7 @@ ul {
 
 }
 
-@keyframes wind {
-	0% {transform: rotate(0deg);}
-	100% {transform: rotate(360deg);}
-}
 
-#windenergy {
-	transform: rotate(0deg);
-	transform-origin: 19px 19px;
-	animation-name: wind;
-	animation-iteration-count: infinite;
-	animation-duration: 0.7s;
-	animation-timing-function: linear;
-
-}
 
 @keyframes baloon {
 	0% {transform: rotate(-14deg) translate(190px, 40px) ;}
@@ -1021,11 +1177,11 @@ fill:rgba(0,41,54,1);}
 		}
 
 		h2 {
-			font-size:20px;
+			font-size:24px;
 		}
 
 		h3 {
-			font-size:18px;
+			font-size:20px;
 		}
 
 		h4 {
@@ -1033,7 +1189,9 @@ fill:rgba(0,41,54,1);}
 		}
 
 
-
+		p {
+		  margin:0 0 20px 0;
+		}
 
 header {
 	padding: 20px;
@@ -1134,12 +1292,7 @@ header {
 
 
 }
-	#cookies button {
-		font-size: 12px;
-		max-width: 40px;
-		margin: 5px;
 
-	}
 
 	button {
 	  margin-bottom: 20px;

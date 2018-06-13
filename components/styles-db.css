@@ -153,9 +153,17 @@ margin-bottom: 10px;
 }
 .revenue,.order,.amount {
 	font-weight: 700;
+	font-size: 20px;
 }
 
-.order , .amount {
+.plus {
+	color: rgba(23, 214, 216,1);
+}
+
+.revenue
+{margin-right: 20px;}
+
+.amount {
 text-align: right;
 
 }
@@ -196,10 +204,7 @@ text-align: right;
 }
 
 .payments
-{display: grid;
-grid-template-columns: 49% 49%;
-align-items: center;
-grid-gap: 2%;
+{display: flex;
 padding: 10px;
 }
 
@@ -453,7 +458,7 @@ h2 {
 }
 
 h3 {
-  font-size:28px;
+  font-size:24px;
 	margin-bottom: 20px;
 }
 
@@ -834,7 +839,7 @@ header {
 
 
 	h1 {
-	  font-size:36px;
+	  font-size:32px;
 	}
 
 	h2 {
@@ -905,6 +910,9 @@ h1,h2,h3,h4 {
 		font-weight: 700;
 		font-size: 16px;
 	}
+
+
+
 	.logo
 	{justify-content: center;}
 
