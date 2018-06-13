@@ -74,6 +74,16 @@ body {
 	height: 100vh;
 	min-height: 100vh;
 }
+
+
+.wrapper {
+
+	min-height: 100vh;
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+
 .companylogo
 {
 color: white;
@@ -662,6 +672,11 @@ ul {
 	align-content: center;
 	justify-content: center;
 }
+
+.gridwrapper2 {
+	width: 100%;
+}
+/*Experimental*/
 
 .menu {display: none;}
 

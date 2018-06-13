@@ -92,13 +92,17 @@ transition: color 0.2s;
 	background-image: url(svg/nomo.svg);
 }
 body {
-	background-color:#f1f1f1;
+	background-color:#fafafa;
 	color: rgba(0,41,54,1);
 	font-family:'Open sans',helvetica,arial,sans-serif;
 	font-size: 18px;
 	margin: auto;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
+	overflow: hidden;
+	min-height: 100vh;
+
+
 }
 button {
 	font-family:'Open sans',helvetica,arial,sans-serif;
@@ -107,11 +111,11 @@ button {
   border: none;
   box-shadow:  2px 2px 2px rgba(0,0,0,0.2);
   margin:20px 0 20px 0;
-  min-width: 150px;
   outline: none;
   padding: 10px;
   text-align: center;
   width: 100%;
+	max-width: 200px;
 	background-color: #fff;
 	font-size: 18px;
 
@@ -170,10 +174,60 @@ footer p {
 
 .card {
   background:#fafafa;
-  padding: 80px;
+  padding: 40px;
 
 }
 
+.request {
+
+display:flex;
+align-items: center;
+
+
+}
+
+.request,.application,.post {
+
+	padding-bottom: 20px;
+}
+
+.request button {
+	margin:10px;
+	width: 60px;
+	height:30px;
+	font-size: 12px;
+	padding:5px;
+}
+.code {
+	font-size: 14px;
+	color: #fff;
+	background:rgba(0,41,54,1);
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+	margin: 10px 10px 40px 0;
+	padding: 20px;
+	overflow:auto;
+	border-radius: 5px;
+}
+
+.tip {
+	background: rgba(23, 214, 216,1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	font-size: 28px;
+	padding: 40px;
+}
+
+.tip a {
+	color: #fff;
+}
+
+.tip a:hover {
+	color: rgba(255,255,255,0.6);
+	transition: color 0.3s;
+}
 
 em {font-weight: 700;}
 
@@ -325,7 +379,7 @@ footer a{
 header{
   background-color: rgba(0,41,54,1);
   color: #fff;
-  padding: 40px 80px;
+  padding: 40px;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -333,9 +387,12 @@ header{
 }
 
 footer {
-	padding: 80px;
-	background-color: rgba(0,41,54,1);
-	color: #fff;
+padding: 40px;
+background-color: rgba(0,41,54,1);
+color: #fff;
+position: absolute;
+bottom: 0;
+width: 100%;
 
 }
 
@@ -376,6 +433,13 @@ h1,h2,h3,h4{
 
 }
 
+label {
+	margin-bottom: 10px;
+	display: inline-block;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
 
 input,textarea{
 	font-family: "Open sans",helvetica,arial,sans-serif;
@@ -446,6 +510,14 @@ input:hover,textarea:hover {
 	animation-timing-function: linear;
 }
 
+
+.wrapper {
+
+	min-height: 100vh;
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
 
 /*only for UI*/
 .wrapperui {padding:80px;}
@@ -632,6 +704,10 @@ ul {
 	align-content: center;
 	justify-content: center;
 }
+.gridwrapper2 {
+	width: 100%;
+}
+/*Experimental*/
 
 figure.article, figure.overview{
 	display:flex;
@@ -1218,6 +1294,14 @@ header {
 
 	.mainnav {display: none;}
 
+	label {
+		margin-bottom: 10px;
+		display: inline-block;
+		font-size: 12px;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
 
 	#mobile-menu {
 		display: none;
@@ -1297,6 +1381,7 @@ header {
 	button {
 	  margin-bottom: 20px;
 		font-size: 14px;
+
 
 	}
 
