@@ -99,7 +99,6 @@ body {
 	margin: auto;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
-	overflow: hidden;
 	min-height: 100vh;
 
 
@@ -390,7 +389,6 @@ footer {
 padding: 40px;
 background-color: rgba(0,41,54,1);
 color: #fff;
-position: absolute;
 bottom: 0;
 width: 100%;
 
