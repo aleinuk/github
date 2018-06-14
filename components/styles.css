@@ -1222,7 +1222,7 @@ figure.overview {
       opacity: 0;
    }
    30% {
-      transform: translate(6px, 220px) rotate(-90deg);
+      transform: translate(6px, 180px) rotate(-90deg);
       opacity: 1;
    }
    80% {
@@ -1243,7 +1243,7 @@ figure.overview {
    opacity: 0;
    transform: translate(6px, 450px) rotate(-90deg);
    animation-name: takeoff;
-   animation-duration: 10s;
+   animation-duration: 5s;
    animation-timing-function: ease-in-out;
    animation-delay: 1s;
    animation-iteration-count: infinite;
@@ -1270,29 +1270,9 @@ figure.overview {
    animation-iteration-count: infinite;
 }
 
-@keyframes arm {
-   0% {
-      transform: translate(0px, 40px) scale(1);
-   }
-   50% {
-      transform: translate(0px, 40px) scale(1);
-   }
-   100% {
-      transform: translate(70px, 40px) scale(0.3);
-   }
-}
-
-#arm {
-   transform: translate(0px, 40px) scale(1);
-   animation-name: arm;
-   animation-duration: 10s;
-   animation-delay: 1s;
-   animation-timing-function: ease;
-   animation-iteration-count: infinite;
-}
 
 #cohete {
-   transform-origin: 100px 100px;
+   transform-origin: 70px 100px;
    animation-name: vibrate;
    animation-duration: 0.1s;
    animation-iteration-count: infinite;
