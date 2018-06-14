@@ -204,6 +204,7 @@ button {
    font-size: 18px;
 }
 
+
 button.primary {
    background-color: rgba(23, 214, 216, 1);
    color: #fff;
@@ -256,23 +257,19 @@ footer p {
    padding: 40px;
 }
 
-.request {
-   display: flex;
-   align-items: center;
+.post,.request,.application {
+   padding:10px 0 10px 0;
+   border-bottom:1px solid rgba(0, 41, 54, 0.1);
+   margin-bottom:10px;
 }
 
-.request,
-.application,
-.post {
-   padding-bottom: 20px;
+.application {
+   border: none;
+   margin-bottom:0;
 }
 
-.request button {
-   margin: 10px;
-   width: 60px;
-   height: 30px;
-   font-size: 12px;
-   padding: 5px;
+.codecolor {
+   color: rgba(23, 214, 216,1);
 }
 
 .code {
@@ -280,11 +277,31 @@ footer p {
    color: #fff;
    background: rgba(0, 41, 54, 1);
    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-   margin: 10px 10px 40px 0;
    padding: 20px;
    overflow: auto;
-   border-radius: 5px;
+   border-radius: 0 0 5px 5px;
+   margin-bottom: 40px;
+   height:84.2%;
+
 }
+
+.url {
+   font-size: 14px;
+   color:rgba(0, 41, 54, 0.5);
+   word-break: break-all;
+ }
+
+ .head {
+   background-color: #F0F6F8;
+   padding:20px;
+   border-radius: 5px;
+   font-size: 14px;
+ }
+
+ .head button {
+   font-size: 14px;
+   width:100px;
+ }
 
 .tip {
    background: rgba(23, 214, 216, 1);
@@ -292,7 +309,7 @@ footer p {
    align-items: center;
    justify-content: center;
    border-radius: 5px;
-   margin-bottom: 20px;
+   margin-bottom: 40px;
    font-size: 28px;
    padding: 40px;
 }
@@ -325,6 +342,7 @@ ul.features li {
    padding: 10px;
    align-items: center;
    justify-content: center;
+   width:100%;
 }
 
 #cookies button {
@@ -471,7 +489,7 @@ footer a {
 header {
    background-color: rgba(0, 41, 54, 1);
    color: #fff;
-   padding: 40px;
+   padding: 20px;
    width: 100%;
    display: flex;
    align-items: center;
@@ -810,7 +828,7 @@ figure.overview {
 #world {
    animation-name: spinworld;
    animation-iteration-count: infinite;
-   animation-duration: 30s;
+   animation-duration: 60s;
    transform: rotate(0deg);
    transform-origin: 225px 225px;
    animation-timing-function: linear;
@@ -1243,9 +1261,8 @@ figure.overview {
    opacity: 0;
    transform: translate(6px, 450px) rotate(-90deg);
    animation-name: takeoff;
-   animation-duration: 5s;
+   animation-duration: 3s;
    animation-timing-function: ease-in-out;
-   animation-delay: 1s;
    animation-iteration-count: infinite;
 }
 
@@ -1265,7 +1282,7 @@ figure.overview {
    stroke-linecap: round;
    stroke-width: 0;
    animation-name: door;
-   animation-duration: 10s;
+   animation-duration: 3s;
    animation-timing-function: ease;
    animation-iteration-count: infinite;
 }
@@ -1373,6 +1390,13 @@ figure.overview {
       position: absolute;
       opacity: 0.95;
    }
+
+   #cookies button {
+      font-size: 12px;
+      max-width: 80px;
+      margin: 20px 20px 20px 0;
+   }
+
    @keyframes slide {
       from {
          right: 3000px;

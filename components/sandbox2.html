@@ -68,9 +68,9 @@
                      <input type="text" placeholder="Company name">
                      <input type="number" placeholder="Phone number">
                      <a href="sandbox2.html"><button class="primary">Get API key</button></a>
+                     <p>Done! Check your inbox 😎</p>
                   </fieldset>
                   </form>
-                  <p>Done! Check your inbox 😄</p>
                </div>
             </section>
             <!--section-->
@@ -108,55 +108,76 @@
                      for a more complete reference.
                   </p>
                </div>
-               <div class="code card">
-                  <div class="post"><em>POST</em> https://api.sandbox.nomo.io/v1/accounts
+               <div class="cardcode">
+
+                  <div class="head">
+                  <div class="post">
+                  <div><em>Post</em> <span class="url"> https://api.sandbox.nomo.io/v1/accounts</span>
+                  </div><button class="primary">Run</button>
                   </div>
-                  <div class="request"><em> Request BODY</em><button class="secondary">Random</button>
-                     <button class="primary">Run</button>
+
+                  <div class="request">
+                  <div>
+                     <em>Request Body</em>
+                  </div><button class="secondary">Random</button>
                   </div>
+
                   <div class="application"><em>Application/json</em></div>
-                  <code>
-                  {
-                  "type": "individual",</br>
-                  "users": [</br>
-                  {</br>
-                  "nationality": "IT",</br>
-                  "dob": "1950-06-28",</br>
-                  "email": "rubjuvfo@dedhobam.gp",</br>
-                  "first_name": "Bryan",</br>
-                  "last_name": "Turner"</br>
-                  }</br>
-                  ],</br>
-                  "addresses": [</br>
-                  {</br>
-                  "country": "IT",</br>
-                  "city": "Gocotuz",</br>
-                  "line1": "543 Idodit Boulevard",</br>
-                  "postal_code": "G5A 3E5",</br>
-                  "state": "TX"</br>
-                  }</br>
-                  ],</br>
-                  "wallets": [</br>
-                  {</br>
-                  "currency": "EUR",</br>
-                  "label": "Luehrik po zoslukop."</br>
-                  }</br>
-                  ],</br>
-                  "bank_accounts": [</br>
-                  {</br>
-                  "country": "IT",</br>
-                  "currency": "EUR",</br>
-                  "bic_swift": "ABCDGB12013",</br>
-                  "iban": "G9694JHBGSN1DDMRT0Y1EV39B4SFS87EED"</br>
-                  }</br>
-                  ]</br>
-                  }</br>
-                  </code>
+                 </div>
+                 <!--head-->
+                 <div class="code">
+                   <code>
+                   {
+                   <span class="codecolor">"type":</span> "individual",</br>
+                   <span class="codecolor">"users"</span>: [</br>
+                   {</br>
+                   <span class="codecolor">"nationality"</span>: "IT",</br>
+                   <span class="codecolor">"dob"</span>: "1950-06-28",</br>
+                   <span class="codecolor">"email"</span>: "rubjuvfo@dedhobam.gp",</br>
+                   <span class="codecolor">"first_name"</span>: "Bryan",</br>
+                   <span class="codecolor">"last_name"</span>: "Turner"</br>
+                   }</br>
+                   ],</br>
+                   <span class="codecolor">"addresses"</span>: [</br>
+                   {</br>
+                   <span class="codecolor">"country"</span>: "IT",</br>
+                   <span class="codecolor">"city"</span>: "Gocotuz",</br>
+                   <span class="codecolor">"line1"</span>: "543 Idodit Boulevard",</br>
+                   <span class="codecolor">"postal_code"</span>: "G5A 3E5",</br>
+                   <span class="codecolor">"state"</span>: "TX"</br>
+                   }</br>
+                   ],</br>
+                   <span class="codecolor">"wallets"</span>: [</br>
+                   {</br>
+                   <span class="codecolor">"currency"</span>: "EUR",</br>
+                   <span class="codecolor">"label"</span>: "Luehrik po zoslukop."</br>
+                   }</br>
+                   ],</br>
+                   <span class="codecolor">"bank_accounts"</span>: [</br>
+                   {</br>
+                   <span class="codecolor">"country"</span>: "IT",</br>
+                   <span class="codecolor">"currency"</span>: "EUR",</br>
+                   <span class="codecolor">"bic_swift"</span>: "ABCDGB12013",</br>
+                   <span class="codecolor">"iban"</span>: "G9694JHBGSN1DDMRT0Y1EV39B4SFS87EED"</br>
+                   }</br>
+                   ]</br>
+                   }</br>
+                   </code>
                </div>
-               <div class="code card">
-                  <div class="post"><em>RESPONSE</em> </div>
-                  <div class="application"><em>Application/json</em></div>
+                <!--code-->
                </div>
+                <!--card-->
+               <div class="cardcode">
+                <div class="head">
+                 <div class="post"><em>RESPONSE</em> </div>
+                 <div class="application"><em>Application/json</em></div>
+                </div>
+                <div class="code">
+
+                </div>
+              <!--code-->
+                </div>
+             <!--cardcode-->
                <div>
                   <p><em>b.</em>
                      Trigger a <a href="https://nomo.io/docs#tag/Payment" target="_blank">Payment</a> which represents a purchase being made on your platform. Each payment can consist of multiple <a href="https://nomo.io/docs#tag/Line" target="_blank"> Lines </a> in case you want to treat different items of your shopping basket independently from each other (e.g. the buyer purchased goods from different sellers).
@@ -170,43 +191,76 @@
                      You can always ask us anything on <a href="https://nomo-engineering.slack.com/join/shared_invite/enQtMTkyNjU1NDIyNzA2LTU1ZGUyMDI4Njc4NWY5ZDZhOTgyYTM3M2RiZDRlZjMyZjJmNzY5NjMzZWUzODk4MTkxZjQ0OTM3M2VjMjk0MjI">Slack</a>
                   <p>
                </div>
-               <div class="code card">
-                  <div class="post"><em>POST</em> https://api.sandbox.nomo.io/v1/accounts
+               <div class="cardcode">
+
+                  <div class="head">
+                  <div class="post">
+                  <div><em>Post</em> <span class="url"> https://api.sandbox.nomo.io/v1/accounts</span>
+                  </div><button class="primary">Run</button>
                   </div>
-                  <div class="request"><em> Request BODY</em><button class="secondary">Random</button>
-                     <button class="primary">Run</button>
+
+                  <div class="request">
+                  <div>
+                     <em>Request Body</em>
+                  </div><button class="secondary">Random</button>
                   </div>
+
                   <div class="application"><em>Application/json</em></div>
-                  <code>
-                  {</br>
-                  "currency": "EUR",</br>
-                  "psp_fee": 0,</br>
-                  "lines": [</br>
-                  {
-                  "state": "charged",</br>
-                  "transactions": [</br>
-                  {
-                  "dst_wallet_id": "YOUR_WALLET_ID",</br>
-                  "dst_amount": 1000</br>
-                  },</br>
-                  {</br>
-                  "payout_on_complete": true,</br>
-                  "bank_account_id": "SELLER_BANK_ACCOUNT_ID",</br>
-                  "dst_wallet_id": "SELLER_WALLET_ID",</br>
-                  "dst_amount": 9000</br>
-                  }</br>
-                  ],</br>
-                  "description": "Liberated one Cuckoo",</br>
-                  "reference": "Cuckoo"</br>
-                  }</br>
-                  ]</br>
-                  }
-                  </code>
+                 </div>
+                 <!--head-->
+                 <div class="code">
+                   <code>
+                   {
+                   <span class="codecolor">"type":</span> "individual",</br>
+                   <span class="codecolor">"users"</span>: [</br>
+                   {</br>
+                   <span class="codecolor">"nationality"</span>: "IT",</br>
+                   <span class="codecolor">"dob"</span>: "1950-06-28",</br>
+                   <span class="codecolor">"email"</span>: "rubjuvfo@dedhobam.gp",</br>
+                   <span class="codecolor">"first_name"</span>: "Bryan",</br>
+                   <span class="codecolor">"last_name"</span>: "Turner"</br>
+                   }</br>
+                   ],</br>
+                   <span class="codecolor">"addresses"</span>: [</br>
+                   {</br>
+                   <span class="codecolor">"country"</span>: "IT",</br>
+                   <span class="codecolor">"city"</span>: "Gocotuz",</br>
+                   <span class="codecolor">"line1"</span>: "543 Idodit Boulevard",</br>
+                   <span class="codecolor">"postal_code"</span>: "G5A 3E5",</br>
+                   <span class="codecolor">"state"</span>: "TX"</br>
+                   }</br>
+                   ],</br>
+                   <span class="codecolor">"wallets"</span>: [</br>
+                   {</br>
+                   <span class="codecolor">"currency"</span>: "EUR",</br>
+                   <span class="codecolor">"label"</span>: "Luehrik po zoslukop."</br>
+                   }</br>
+                   ],</br>
+                   <span class="codecolor">"bank_accounts"</span>: [</br>
+                   {</br>
+                   <span class="codecolor">"country"</span>: "IT",</br>
+                   <span class="codecolor">"currency"</span>: "EUR",</br>
+                   <span class="codecolor">"bic_swift"</span>: "ABCDGB12013",</br>
+                   <span class="codecolor">"iban"</span>: "G9694JHBGSN1DDMRT0Y1EV39B4SFS87EED"</br>
+                   }</br>
+                   ]</br>
+                   }</br>
+                   </code>
                </div>
-               <div class="code card">
-                  <div class="post"><em>RESPONSE</em> </div>
-                  <div class="application"><em>Application/json</em></div>
+                <!--code-->
                </div>
+                <!--card-->
+               <div class="cardcode">
+                <div class="head">
+                 <div class="post"><em>RESPONSE</em> </div>
+                 <div class="application"><em>Application/json</em></div>
+                </div>
+                <div class="code">
+
+                </div>
+              <!--code-->
+                </div>
+             <!--cardcode-->
                <div>
                   <p>
                      If you check in the Dashboard now you will see the Transactions in a <em>pending</em> state since we wouldn’t have received the real funds in the trust account yet.
