@@ -1,0 +1,1480 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+   display: block;
+}
+
+ol,
+ul {
+   list-style: none;
+}
+
+blockquote,
+q {
+   quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+   content: '';
+   content: none;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+
+/*comps*/
+
+* {
+   box-sizing: border-box;
+}
+
+.mainnav a {
+   display: inline-block;
+   padding: 20px;
+   margin-left: 20px;
+}
+
+.mainnav a {
+   color: rgba(255, 255, 255, 1);
+   text-decoration: none;
+}
+
+.mainnav a:hover {
+   color: rgba(23, 214, 216, 0.6);
+   transition: color 0.2s;
+}
+
+a {
+   color: rgba(23, 214, 216, 1);
+   text-decoration: none;
+   font-weight: 700;
+}
+
+a:hover {
+   color: rgba(23, 214, 216, 0.6);
+   transition: color 0.2s;
+}
+
+.mainnav a.active {
+   color: #fff;
+}
+
+.logo a {
+   height: 17px;
+   width: 156px;
+   display: block;
+   background-image: url(svg/nomo.svg);
+}
+
+body {
+   background-color: #fafafa;
+   color: rgba(0, 41, 54, 1);
+   font-family: 'Open sans', helvetica, arial, sans-serif;
+   font-size: 18px;
+   margin: auto;
+   -webkit-font-smoothing: antialiased;
+   text-rendering: optimizeLegibility;
+   min-height: 100vh;
+}
+
+button {
+   font-family: 'Open sans', helvetica, arial, sans-serif;
+   font-weight: 700;
+   border-radius: 5px;
+   border: none;
+   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+   margin: 20px 0 20px 0;
+   outline: none;
+   padding: 10px;
+   text-align: center;
+   width: 100%;
+   max-width: 200px;
+   background-color: #fff;
+   font-size: 18px;
+}
+
+button.primary {
+   background-color: rgba(23, 214, 216, 1);
+   color: #fff;
+}
+
+button.secondary {
+   background: #fafafa;
+   color: rgba(0, 41, 54, 1);
+}
+
+button:hover {
+   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+   opacity: 0.6;
+}
+
+button:active {
+   transform: scale(0.9);
+   transition: transform 0.1s;
+   transition-timing-function: ease-in-out;
+}
+
+.disclaimer {
+   font-size: 12px;
+   padding: 20px 0;
+   width: 100%;
+   opacity: 0.4;
+}
+
+.ok {
+   background-image: url(svg/ok.svg);
+   width: 36px;
+   display: inline-block;
+   height: 36px;
+   vertical-align: middle;
+   margin-right: 10px;
+}
+
+footer p {
+   margin: 0;
+}
+
+.disclaimer a {
+   font-size: 12px;
+   padding: 0;
+   font-weight: 800;
+}
+
+.card {
+   background: #fafafa;
+   padding: 40px;
+}
+
+.request {
+   display: flex;
+   align-items: center;
+}
+
+.request,
+.application,
+.post {
+   padding-bottom: 20px;
+}
+
+.request button {
+   margin: 10px;
+   width: 60px;
+   height: 30px;
+   font-size: 12px;
+   padding: 5px;
+}
+
+.code {
+   font-size: 14px;
+   color: #fff;
+   background: rgba(0, 41, 54, 1);
+   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+   margin: 10px 10px 40px 0;
+   padding: 20px;
+   overflow: auto;
+   border-radius: 5px;
+}
+
+.tip {
+   background: rgba(23, 214, 216, 1);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 5px;
+   margin-bottom: 20px;
+   font-size: 28px;
+   padding: 40px;
+}
+
+.tip a {
+   color: #fff;
+}
+
+.tip a:hover {
+   color: rgba(255, 255, 255, 0.6);
+   transition: color 0.3s;
+}
+
+em {
+   font-weight: 700;
+}
+
+ul.features li {
+   display: inline-block;
+   width: 25%;
+   padding: 20px;
+}
+
+#cookies {
+   background-color: rgba(23, 214, 216, 0.9);
+   position: fixed;
+   display: flex;
+   bottom: 0;
+   font-size: 12px;
+   padding: 10px;
+   align-items: center;
+   justify-content: center;
+}
+
+#cookies button {
+   font-size: 12px;
+   max-width: 80px;
+   margin: 10px;
+}
+
+#cookies p {
+   margin: 0;
+}
+
+#cookies a {
+   color: #fff;
+}
+
+.error {
+   border: 1px solid #EF8368;
+}
+
+input.error {
+   margin-bottom: 0;
+}
+
+
+/*checkbox*/
+
+
+/* Customize the label (the container) */
+
+.container {
+   display: block;
+   position: relative;
+   padding-left: 35px;
+   margin-bottom: 12px;
+}
+
+
+/* Hide the browser's default checkbox */
+
+.container input {
+   position: absolute;
+   opacity: 0;
+   cursor: pointer;
+}
+
+
+/* Create a custom checkbox */
+
+.checkmark {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 22px;
+   width: 22px;
+   background-color: #F0F6F8;
+   border: 1px solid rgba(23, 214, 216, 1);
+   border-radius: 2px;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.container:hover input~.checkmark {
+   background-color: #fff;
+   border: 1px solid rgba(23, 214, 216, 1);
+}
+
+
+/* When the checkbox is checked, add a blue background */
+
+.container input:checked~.checkmark {
+   background-color: rgba(23, 214, 216, 1);
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+   content: "";
+   position: absolute;
+   display: none;
+}
+
+
+/* Show the checkmark when checked */
+
+.container input:checked~.checkmark:after {
+   display: block;
+}
+
+
+/* Style the checkmark/indicator */
+
+.container .checkmark:after {
+   left: 7px;
+   top: 3px;
+   width: 5px;
+   height: 10px;
+   border: solid white;
+   border-width: 0 2px 2px 0;
+   transform: rotate(45deg);
+}
+
+
+/*checkbox*/
+
+.error::placeholder {
+   color: #EF8368;
+}
+
+p.errormsg {
+   font-size: 14px;
+   color: #EF8368;
+   margin: 10px 0;
+}
+
+figure {
+   margin: 0;
+   padding: 0;
+   display: flex;
+   height: 100%;
+   width: 100%;
+   align-items: center;
+   justify-content: center;
+}
+
+footer h4 {
+   margin-bottom: 10px;
+}
+
+footer nav li {
+   display: block;
+}
+
+footer a {
+   font-size: 14px;
+   padding: 10px 0;
+   display: inline-block;
+   color: #fff;
+   font-weight: 400;
+}
+
+header {
+   background-color: rgba(0, 41, 54, 1);
+   color: #fff;
+   padding: 40px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+}
+
+footer {
+   padding: 40px;
+   background-color: rgba(0, 41, 54, 1);
+   color: #fff;
+   bottom: 0;
+   width: 100%;
+}
+
+footer nav {
+   display: inline-grid;
+   grid-template-columns: auto auto auto;
+   grid-gap: 4%;
+   width: 100%;
+}
+
+h1 {
+   font-size: 40px;
+   margin-bottom: 40px;
+}
+
+h2 {
+   font-size: 32px;
+   margin-bottom: 20px;
+}
+
+h3 {
+   font-size: 24px;
+   margin-bottom: 20px;
+}
+
+h4 {
+   font-size: 20px;
+   margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+   font-weight: 800;
+}
+
+label {
+   margin-bottom: 10px;
+   display: inline-block;
+   font-size: 12px;
+   text-transform: uppercase;
+   font-weight: 700;
+}
+
+input,
+textarea {
+   font-family: "Open sans", helvetica, arial, sans-serif;
+   background-color: #F0F6F8;
+   border: 1px solid #fafafa;
+   border-radius: 5px;
+   display: block;
+   font-size: 18px;
+   margin-bottom: 20px;
+   padding: 20px;
+   outline: none;
+   width: 100%;
+}
+
+input:hover,
+textarea:hover {
+   background-color: #FFF;
+   border: 1px solid rgba(0, 41, 54, 0.1);
+}
+
+.maincolorblue {
+   background-color: rgba(0, 41, 54, 1);
+   color: white;
+   display: block;
+   padding: 20px;
+   margin: 20px;
+}
+
+.maincolorgreen {
+   background-color: rgba(23, 214, 216, 1);
+   color: white;
+   display: block;
+   padding: 20px;
+   margin: 20px;
+}
+
+.modalbuttons .primary,
+.modalbuttons .secondary {
+   display: inline-block;
+   width: 47%;
+}
+
+.modalbuttons .primary {
+   margin-left: 20px;
+}
+
+.mainnav {
+   display: flex;
+   justify-content: flex-end;
+   width: 100%;
+}
+
+.overlay {
+   background-color: rgba(0, 0, 0, 0.5);
+   padding: 20px;
+   position: relative;
+}
+
+@keyframes loading {
+   from {
+      transform: rotate(0deg)
+   }
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+#loader {
+   transform-origin: 45px 45px;
+   animation-name: loading;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+
+.wrapper {
+   min-height: 100vh;
+   overflow: hidden;
+   display: block;
+   position: relative;
+}
+
+
+/*only for UI*/
+
+.wrapperui {
+   padding: 80px;
+}
+
+.ui {
+   margin-bottom: 40px;
+}
+
+
+/*only for UI*/
+
+.loader {
+   display: flex;
+   width: 100%;
+   align-items: center;
+   justify-content: center;
+}
+
+.modal {
+   background: white;
+   padding: 20px;
+   margin: 20px;
+   border-radius: 5px;
+   min-width: 200px;
+}
+
+.modal h3 {
+   margin-bottom: 10px;
+}
+
+p {
+   margin: 0 0 40px 0;
+}
+
+::placeholder {
+   color: rgba(0, 41, 54, 0.4);
+}
+
+.special {
+   padding: 0;
+}
+
+svg {
+   max-width: 100%;
+}
+
+ul {
+   list-style-type: none;
+   padding-left: 0px;
+}
+
+.slack {
+   background-image: url(svg/slack.svg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   height: 24px;
+   width: 24px;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.API {
+   background-image: url(svg/API.svg);
+}
+
+.seller {
+   background-image: url(svg/seller.svg);
+}
+
+.graphic {
+   height: 120px;
+   width: 120px;
+   background-position: center center;
+   background-repeat: no-repeat;
+   display: block;
+   margin-bottom: 20px;
+}
+
+.psd2 {
+   background-image: url(svg/psd2.svg);
+}
+
+.flexible {
+   background-image: url(svg/flexible.svg);
+}
+
+.devs {
+   background-image: url(svg/devs.svg);
+}
+
+.steps {
+   background-image: url(svg/steps.svg);
+}
+
+.adminpanel {
+   background-image: url(svg/adminpanel.svg);
+}
+
+.currencies {
+   background-image: url(svg/currencies.svg);
+}
+
+.sellers {
+   background-image: url(svg/sellers.svg);
+}
+
+.humansupport {
+   background-image: url(svg/humansupport.svg);
+}
+
+.support {
+   background-image: url(svg/support.svg);
+}
+
+.compliance {
+   background-image: url(svg/compliance.svg);
+}
+
+.benefits li {
+   background-image: url(svg/benefitsok.svg);
+   background-position: left center;
+   background-repeat: no-repeat;
+   display: block;
+   margin-bottom: 20px;
+   padding-left: 40px;
+}
+
+.devnav a {
+   display: inline-block;
+   padding: 10px 10px 10px 0;
+   margin-right: 20px;
+}
+
+#hot1 {
+   stroke-dasharray: 2000;
+   animation: hot1 3s linear infinite;
+}
+
+@keyframes hot1 {
+   to {
+      stroke-dashoffset: 2000;
+   }
+}
+
+
+/*Experimental*/
+
+.gridwrapper1 {
+   display: inline-grid;
+   grid-template-columns: 48% 48%;
+   grid-gap: 4%;
+   padding: 20px 0 20px 0;
+   width: 100%;
+   align-content: center;
+   justify-content: center;
+}
+
+.gridwrapper2 {
+   width: 100%;
+}
+
+
+/*Experimental*/
+
+figure.article,
+figure.overview {
+   display: flex;
+   align-items: flex-start;
+   justify-content: center
+}
+
+.grid {
+   margin-bottom: 20px;
+}
+
+
+/*animation*/
+
+#greenlight {
+   opacity: 1;
+   animation-name: greenlight;
+   animation-duration: 2s;
+   animation-timing-function: ease-ease-in-out;
+   animation-iteration-count: infinite;
+}
+
+@keyframes greenlight {
+   0% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+}
+
+#world {
+   animation-name: spinworld;
+   animation-iteration-count: infinite;
+   animation-duration: 30s;
+   transform: rotate(0deg);
+   transform-origin: 225px 225px;
+   animation-timing-function: linear;
+}
+
+@keyframes spinworld {
+   0% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+#rocket {
+   transform: translate(0px, 0px) rotate(-10deg);
+   animation-name: rocketfly;
+   animation-iteration-count: infinite;
+   animation-duration: 0.1s;
+   animation-timing-function: ease;
+}
+
+#rocket2 {
+   animation-name: rocketfly2;
+   animation-iteration-count: infinite;
+   animation-duration: 0.1s;
+   animation-timing-function: ease;
+}
+
+@keyframes rocketfly2 {
+   0% {
+      transform: translate(225px, 197px) rotate(-360deg) translate(-223px, -196px) translate(59px, 92px);
+   }
+   100% {
+      transform: translate(224px, 196px) rotate(-360deg) translate(-222px, -195px) translate(58px, 91px);
+   }
+}
+
+@keyframes rocketfly {
+   0% {
+      transform: translate(210px, 5px) rotate(-10deg);
+   }
+   100% {
+      transform: translate(210px, 7px) rotate(-10deg);
+   }
+}
+
+@keyframes stars {
+   0% {
+      transform: translateX(0px) translateY(0);
+      opacity: 0;
+   }
+   100% {
+      transform: translateX(-500px) translateY(300px);
+      opacity: 0.7;
+   }
+}
+
+@keyframes moon {
+   0% {
+      transform: translateX(400px) translateY(100px);
+      opacity: 0.5;
+   }
+   50% {
+      transform: translateX(100px) translateY(200px);
+      opacity: 1;
+   }
+   100% {
+      transform: translateX(-50px) translateY(300px);
+      opacity: 0;
+   }
+}
+
+#moon {
+   animation-name: moon;
+   opacity: 0;
+   animation-iteration-count: infinite;
+   animation-duration: 10s;
+   animation-timing-function: linear;
+}
+
+#stars {
+   animation-name: stars;
+   animation-iteration-count: infinite;
+   animation-duration: 0.5s;
+   animation-timing-function: linear;
+}
+
+#flame {
+   animation-name: flame;
+   animation-iteration-count: infinite;
+   animation-duration: 0.1s;
+   animation-timing-function: ease;
+}
+
+@keyframes flame {
+   0% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+}
+
+@keyframes clouds {
+   0% {
+      transform: translateX(0);
+      opacity: 0
+   }
+   50% {
+      transform: translateX(85px);
+      opacity: 1
+   }
+   100% {
+      transform: translateX(150px);
+      opacity: 0
+   }
+}
+
+@keyframes clouds2 {
+   0% {
+      transform: translateX(0);
+      opacity: 0
+   }
+   50% {
+      transform: translateX(100px);
+      opacity: 1
+   }
+   100% {
+      transform: translateX(250px);
+      opacity: 0
+   }
+}
+
+#cloud2 {
+   animation-name: clouds2;
+   animation-iteration-count: infinite;
+   animation-duration: 25s;
+   animation-timing-function: linear;
+}
+
+#cloud {
+   animation-name: clouds;
+   animation-iteration-count: infinite;
+   animation-duration: 20s;
+   animation-timing-function: linear;
+}
+
+@keyframes lights {
+   0% {
+      fill: #17D6D8;
+   }
+   50% {
+      fill: white;
+   }
+   100% {
+      fill: #17D6D8;
+   }
+}
+
+#verde {
+   animation-name: lights;
+   animation-iteration-count: infinite;
+   animation-duration: 5s;
+   animation-timing-function: ease;
+}
+
+@keyframes cursor {
+   0% {
+      opacity: 0
+   }
+   100% {
+      opacity: 1
+   }
+}
+
+#dash {
+   animation-name: cursor;
+   animation-iteration-count: infinite;
+   animation-duration: 0.7s;
+   animation-timing-function: linear;
+}
+
+@keyframes drink {
+   0% {
+      stroke-dashoffset: 20;
+   }
+   100% {
+      stroke-dashoffset: 0;
+   }
+}
+
+#hot1 {
+   opacity: 0.8;
+   stroke-dasharray: 10;
+   stroke-dashoffset: 20;
+   animation-name: drink;
+   animation-iteration-count: infinite;
+   animation-duration: 0.8s;
+   animation-timing-function: linear;
+}
+
+@keyframes baloon {
+   0% {
+      transform: rotate(-14deg) translate(190px, 40px);
+   }
+   50% {
+      transform: rotate(0deg) translate(190px, 40px);
+   }
+   100% {
+      transform: rotate(-14deg) translate(190px, 40px);
+   }
+}
+
+#baloon {
+   transform: translate(190px, 40px) rotate(0deg);
+   transform-origin: 220px 220px;
+   animation-name: baloon;
+   animation-iteration-count: infinite;
+   animation-duration: 3s;
+   animation-timing-function: linear;
+}
+
+@keyframes float {
+   0% {
+      transform: translate(10px, 10px);
+      opacity: 0;
+   }
+   50% {
+      transform: translate(10px, -100px);
+      opacity: 0.5;
+   }
+   100% {
+      transform: translate(10px, -200px);
+      opacity: 0;
+   }
+}
+
+@keyframes float6 {
+   0% {
+      transform: translate(-70px, 10px);
+      opacity: 0;
+   }
+   50% {
+      transform: translate(-70px, -60px);
+      opacity: 0.5;
+   }
+   100% {
+      transform: translate(-70px, -110px);
+      opacity: 0;
+   }
+}
+
+@keyframes floatb {
+   0% {
+      transform: translate(0, 10px);
+      opacity: 0;
+   }
+   50% {
+      transform: translate(0, -100px);
+      opacity: 0.4;
+   }
+   100% {
+      transform: translate(0, -200px);
+      opacity: 0;
+   }
+}
+
+@keyframes floate {
+   0% {
+      transform: translate(10px, 0);
+      opacity: 0;
+   }
+   50% {
+      transform: translate(10px, -400px);
+      opacity: 1;
+   }
+   100% {
+      transform: translate(10px, -600px);
+      opacity: 0;
+   }
+}
+
+@keyframes floatc {
+   0% {
+      transform: translate(10px, 0);
+      opacity: 0;
+   }
+   50% {
+      transform: translate(10px, -600px);
+      opacity: 0.6;
+   }
+   100% {
+      transform: translate(10px, -1000px);
+      opacity: 0;
+   }
+}
+
+#cloudc {
+   opacity: 1;
+   transform: translate(0, 0);
+   transform-origin: 220px 220px;
+   animation-name: floatc;
+   animation-iteration-count: infinite;
+   animation-duration: 8s;
+   animation-timing-function: linear;
+}
+
+#cloude {
+   opacity: 1;
+   transform: translate(0, 0);
+   transform-origin: 220px 220px;
+   animation-name: floate;
+   animation-iteration-count: infinite;
+   animation-duration: 10s;
+   animation-timing-function: linear;
+}
+
+#clouda {
+   transform: translate(0, 0);
+   transform-origin: 220px 220px;
+   animation-name: float;
+   animation-iteration-count: infinite;
+   animation-duration: 12s;
+   animation-timing-function: linear;
+}
+
+#cloudb {
+   opacity: 0;
+   transform: translate(20px, 40px) rotate(0deg);
+   animation-name: floatb;
+   animation-iteration-count: infinite;
+   animation-duration: 24s;
+   animation-timing-function: linear;
+}
+
+#cloud6 {
+   opacity: 0;
+   transform: translate(100px, 30px) rotate(0deg);
+   animation-name: float6;
+   animation-iteration-count: infinite;
+   animation-duration: 14s;
+   animation-timing-function: linear;
+}
+
+@keyframes flyl {
+   0% {
+      transform: translate(67px, 23px) rotate(-360deg) translate(-67px, -23px);
+   }
+   100% {
+      transform: translate(67px, 23px) rotate(-361deg) translate(-67px, -23px);
+   }
+}
+
+@keyframes flyb {
+   0% {
+      transform: translate(100px, 329px) rotate(2deg);
+      opacity: 0
+   }
+   50% {
+      transform: translate(110px, 229px) rotate(20deg);
+      opacity: 1
+   }
+   100% {
+      transform: translate(100px, 129px) rotate(-10deg);
+      opacity: 0
+   }
+}
+
+#kidbal {
+   opacity: 0;
+   animation-name: flyb;
+   animation-iteration-count: infinite;
+   animation-duration: 12s;
+   animation-delay: 10s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+
+@keyframes hole {
+   0% {
+      opacity: 0;
+      ) fill: rgba(0, 41, 54, 1);
+   }
+   5% {
+      opacity: 1;
+   }
+   100% {
+      opacity: 0;
+      fill: rgba(0, 41, 54, 1);
+   }
+}
+
+#hole {
+   opacity: 0;
+   animation-name: hole;
+   animation-duration: 10s;
+   animation-timing-function: ease;
+   animation-iteration-count: infinite;
+}
+
+@keyframes takeoff {
+   0% {
+      transform: translate(6px, 600px) rotate(-90deg);
+      opacity: 0;
+   }
+   15% {
+      transform: translate(6px, 350px) rotate(-90deg);
+      opacity: 0;
+   }
+   30% {
+      transform: translate(6px, 220px) rotate(-90deg);
+      opacity: 1;
+   }
+   80% {
+      transform: translate(6px, 100px) rotate(-30deg);
+      opacity: 1;
+   }
+   90% {
+      transform: translate(0px, 140px) rotate(-30deg);
+      opacity: 1;
+   }
+   100% {
+      transform: translate(3000px, -3000px) rotate(60deg);
+      opacity: 0;
+   }
+}
+
+#rocket3 {
+   opacity: 0;
+   transform: translate(6px, 450px) rotate(-90deg);
+   animation-name: takeoff;
+   animation-duration: 10s;
+   animation-timing-function: ease-in-out;
+   animation-delay: 1s;
+   animation-iteration-count: infinite;
+}
+
+@keyframes door {
+   0% {
+      stroke-width: 0
+   }
+   50% {
+      stroke-width: 8px
+   }
+   100% {
+      stroke-width: 0
+   }
+}
+
+#door {
+   stroke-linecap: round;
+   stroke-width: 0;
+   animation-name: door;
+   animation-duration: 10s;
+   animation-timing-function: ease;
+   animation-iteration-count: infinite;
+}
+
+@keyframes arm {
+   0% {
+      transform: translate(0px, 40px) scale(1);
+   }
+   50% {
+      transform: translate(0px, 40px) scale(1);
+   }
+   100% {
+      transform: translate(70px, 40px) scale(0.3);
+   }
+}
+
+#arm {
+   transform: translate(0px, 40px) scale(1);
+   animation-name: arm;
+   animation-duration: 10s;
+   animation-delay: 1s;
+   animation-timing-function: ease;
+   animation-iteration-count: infinite;
+}
+
+#cohete {
+   transform-origin: 100px 100px;
+   animation-name: vibrate;
+   animation-duration: 0.1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+
+@keyframes vibrate {
+   0% {
+      transform: translatex(2px) rotate(90deg);
+   }
+   100% {
+      transform: translatex(0px) rotate(90deg);
+   }
+}
+
+@keyframes flame2 {
+   0% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+}
+
+#flame2 {
+   opacity: 0;
+   transform-origin: 0 0;
+   animation-name: flame2;
+   animation-duration: 0.1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease;
+}
+
+.menu {
+   display: none;
+}
+
+@media only screen and (max-width: 600px) {
+   body {
+      font-size: 14px;
+   }
+   h1 {
+      font-size: 32px;
+   }
+   h2 {
+      font-size: 24px;
+   }
+   h3 {
+      font-size: 20px;
+   }
+   h4 {
+      font-size: 16px;
+   }
+   p {
+      margin: 0 0 20px 0;
+   }
+   header {
+      padding: 20px;
+      height: 80px;
+   }
+   .hamburger {
+      width: 44px;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+   }
+   button.hamburger {
+      background-color: rgba(23, 214, 216, 1);
+      padding: 10px;
+      color: #fff;
+      font-size: 18px;
+      min-width: 44px;
+      margin: 0;
+   }
+   .mainnav {
+      display: none;
+   }
+   label {
+      margin-bottom: 10px;
+      display: inline-block;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: 700;
+   }
+   #mobile-menu {
+      display: none;
+   }
+   #mobile-menu {
+      background-color: rgba(0, 41, 54, 1);
+      padding: 80px 20px 20px 20px;
+      width: 100%;
+      height: 100vh;
+      z-index: 3000;
+      animation-name: slide;
+      animation-duration: 0.3s;
+      animation-timing-function: ease;
+      overflow: hidden;
+      position: absolute;
+      opacity: 0.95;
+   }
+   @keyframes slide {
+      from {
+         right: 3000px;
+         opacity: 0.1
+      }
+      to {
+         left: 0;
+         opacity: 0.9;
+      }
+   }
+   .gridwrapper1 {
+      display: block;
+      padding: 20px 0 20px 0;
+      width: 100%;
+      align-content: center;
+      justify-content: center;
+   }
+   .menu {
+      display: block;
+      right: 20px;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+   }
+   .mobile a {
+      display: block;
+      padding: 20px;
+      margin-bottom: 10px;
+      color: #fff;
+      font-size: 18px;
+   }
+   .mobile a:hover {
+      color: rgba(255, 255, 255, 0.6);
+   }
+   .modalbuttons .primary,
+   .modalbuttons .secondary {
+      display: block;
+      width: 100%;
+   }
+   .modalbuttons .primary {
+      margin-left: 0;
+   }
+   #cookies {
+      display: block;
+   }
+   button {
+      margin-bottom: 20px;
+      font-size: 14px;
+   }
+   .card {
+      overflow: hidden;
+      padding: 20px;
+   }
+   .special {
+      padding: 0;
+   }
+   h1,
+   h2,
+   h3,
+   h4 {
+      margin-bottom: 10px;
+   }
+   .mainnav {
+      justify-content: center;
+   }
+   input,
+   textarea {
+      padding: 15px;
+      font-size: 14px;
+   }
+   footer {
+      padding: 20px;
+   }
+   .features {
+      text-align: center;
+   }
+   ul.features li {
+      padding: 10px;
+      display: block;
+      width: 100%;
+   }
+   p {
+      padding: 0 0 10px 0;
+   }
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html >
+<html lang="en">
+   <head>
+      <link type="text/css" href="styles.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+      <title>NOMO - Landing pages UI</title>
+   </head>
+   <body>
+      <script src="cookies.js"></script>
+      <script src="menu.js"></script>
+      <div class="mobile" id="mobile-menu">
+         <div class="menu">
+            <button class="hamburger x" onclick="off()">
+            &#10005;
+            </button>
+            <nav class="mobile">
+               <a href="nomo.html"> Nomo </a>
+               <a href="features.html"> Features </a>
+               <a href="developers.html">Developers</a>
+               <a href="contact.html">Contact</a>
+            </nav>
+         </div>
+      </div>
+      <header>
+         <div class="menu">
+            <button class="hamburger 3 lines" onclick="on()">
+            &#9776;
+            </button>
+         </div>
+         <div class="logo">
+            <a href="nomo.html">
+            </a>
+         </div>
+         <nav class="mainnav">
+            <a href="nomo.html">
+            <a href="features.html"> Features </a>
+            <a href="developers.html">Developers</a>
+            <a href="contact.html">Contact</a>
+         </nav>
+      </header>
+      <div class="wrapper">
+         <div class="card">
+            <div class="devnav">
+               <a href="developers.html">1. Basic concepts</a>
+               <a href="sandbox.html">2. Sandbox</a>
+               <a href="http://nomo.io/docs" target="_blank">3. API Docs</a>
+            </div>
+            <section class="gridwrapper1">
+               <div>
+                  <h1>Sandbox</h1>
+                  <h2>1. Get your API key</h2>
+                  <p>We’ll get you set up in our Sandbox in no time.
+                     First of all, please fill in the short form so we can create a Partner Account on our platform for you.
+                  </p>
+                  <p>
+                     You will receive an email with a link to set up your password and to sign into the Dashboard.
+                     In the <em>Dashboard under Settings in the Developers section </em> you will find your API Key which you need to incorporate into the following commands.
+                  </p>
+               </div>
+               <div class="form">
+                  <form="#">
+                  <fieldset>
+                     <input type="text" placeholder="First name">
+                     <input type="text" placeholder="Last name">
+                     <input type="email" placeholder="yourname@alein.uk">
+                     <input type="text" placeholder="Company name">
+                     <input type="number" placeholder="Phone number">
+                     <a href="sandbox2.html"><button class="primary">Get API key</button></a>
+                  </fieldset>
+                  </form>
+               </div>
+            </section>
+            <!--section-->
+         </div>
+         <!--card-->
+         <div class="card">
+            <section class="gridwrapper1">
+               <div>
+                  <h2>2. First payment</h2>
+                  <p>Copy & paste your API key and follow the steps to complete your first payment</p>
+               </div>
+               <div class="form">
+                  <form="#">
+                  <fieldset>
+                     <label for="apikey">Copy and paste the API key you've received:</label>
+                     <input type="text" placeholder="API key" name="apikey">
+                  </fieldset>
+                  </form>
+               </div>
+            </section>
+            <!--section-->
+         </div>
+         <!--card-->
+         <div class="card">
+            <section class="gridwrapper1">
+               <div>
+                  <h2>3. Main processes</h2>
+                  <p><em>a.</em> Create a seller to whom we can eventually pay out money.
+                     You do that by creating an <a href="https://nomo.io/docs#tag/Account" target="_blank">Account</a> first and associate it with a <a href="https://nomo.io/docs#tag/User" target="_blank">User</a> and <a href="https://nomo.io/docs#tag/Address" target="_blank">Address</a> which will be the legal contact. Add a <a href="https://nomo.io/docs#tag/Wallet" target="_blank">Wallet</a> to receive money and the seller’s <a href="https://nomo.io/docs#tag/Bank-Account" target="_blank">Bank Account</a> to pay out to.
+                     This single command will do it all.
+                  </p>
+               </div>
+               <div class="tip">
+                  <p>Check the <a href="https://nomo.io/docs" target="_blank">API Docs</a>
+                     for a more complete reference.
+                  </p>
+               </div>
+               <div class="code card">
+                  <div class="post"><em>POST</em> https://api.sandbox.nomo.io/v1/accounts
+                  </div>
+                  <div class="request"><em> Request BODY</em><button class="secondary">Random</button>
+                     <button class="primary">Run</button>
+                  </div>
+                  <div class="application"><em>Application/json</em></div>
+                  <code>
+                  {
+                  "type": "individual",</br>
+                  "users": [</br>
+                  {</br>
+                  "nationality": "IT",</br>
+                  "dob": "1950-06-28",</br>
+                  "email": "rubjuvfo@dedhobam.gp",</br>
+                  "first_name": "Bryan",</br>
+                  "last_name": "Turner"</br>
+                  }</br>
+                  ],</br>
+                  "addresses": [</br>
+                  {</br>
+                  "country": "IT",</br>
+                  "city": "Gocotuz",</br>
+                  "line1": "543 Idodit Boulevard",</br>
+                  "postal_code": "G5A 3E5",</br>
+                  "state": "TX"</br>
+                  }</br>
+                  ],</br>
+                  "wallets": [</br>
+                  {</br>
+                  "currency": "EUR",</br>
+                  "label": "Luehrik po zoslukop."</br>
+                  }</br>
+                  ],</br>
+                  "bank_accounts": [</br>
+                  {</br>
+                  "country": "IT",</br>
+                  "currency": "EUR",</br>
+                  "bic_swift": "ABCDGB12013",</br>
+                  "iban": "G9694JHBGSN1DDMRT0Y1EV39B4SFS87EED"</br>
+                  }</br>
+                  ]</br>
+                  }</br>
+                  </code>
+               </div>
+               <div class="code card">
+                  <div class="post"><em>RESPONSE</em> </div>
+                  <div class="application"><em>Application/json</em></div>
+               </div>
+               <div>
+                  <p><em>b.</em>
+                     Trigger a <a href="https://nomo.io/docs#tag/Payment" target="_blank">Payment</a> which represents a purchase being made on your platform. Each payment can consist of multiple <a href="https://nomo.io/docs#tag/Line" target="_blank"> Lines </a> in case you want to treat different items of your shopping basket independently from each other (e.g. the buyer purchased goods from different sellers).
+                     We keep it simple here and create just one Line which is then associated with multiple <a href="https://nomo.io/docs#tag/Transaction" target="_blank">Transactions</a>. We want one Transaction for the seller’s revenue (Merchandise revenue) and another one for your marketplace commission (Net revenue).
+                  </p>
+                  <p>    In our example we’ve taken 10% commission from that sale - the rest goes to the seller (i.e. in their wallet).
+                  </p>
+               </div>
+               <div class="tip">
+                  <p> Questions?
+                     You can always ask us anything on <a href="https://nomo-engineering.slack.com/join/shared_invite/enQtMTkyNjU1NDIyNzA2LTU1ZGUyMDI4Njc4NWY5ZDZhOTgyYTM3M2RiZDRlZjMyZjJmNzY5NjMzZWUzODk4MTkxZjQ0OTM3M2VjMjk0MjI">Slack</a>
+                  <p>
+               </div>
+               <div class="code card">
+                  <div class="post"><em>POST</em> https://api.sandbox.nomo.io/v1/accounts
+                  </div>
+                  <div class="request"><em> Request BODY</em><button class="secondary">Random</button>
+                     <button class="primary">Run</button>
+                  </div>
+                  <div class="application"><em>Application/json</em></div>
+                  <code>
+                  {</br>
+                  "currency": "EUR",</br>
+                  "psp_fee": 0,</br>
+                  "lines": [</br>
+                  {
+                  "state": "charged",</br>
+                  "transactions": [</br>
+                  {
+                  "dst_wallet_id": "YOUR_WALLET_ID",</br>
+                  "dst_amount": 1000</br>
+                  },</br>
+                  {</br>
+                  "payout_on_complete": true,</br>
+                  "bank_account_id": "SELLER_BANK_ACCOUNT_ID",</br>
+                  "dst_wallet_id": "SELLER_WALLET_ID",</br>
+                  "dst_amount": 9000</br>
+                  }</br>
+                  ],</br>
+                  "description": "Liberated one Cuckoo",</br>
+                  "reference": "Cuckoo"</br>
+                  }</br>
+                  ]</br>
+                  }
+                  </code>
+               </div>
+               <div class="code card">
+                  <div class="post"><em>RESPONSE</em> </div>
+                  <div class="application"><em>Application/json</em></div>
+               </div>
+               <div>
+                  <p>
+                     If you check in the Dashboard now you will see the Transactions in a <em>pending</em> state since we wouldn’t have received the real funds in the trust account yet.
+                     The corresponding <a href="" target="_blank">Wallets</a> will show a <em>pending</em> balance respectively.
+                  </p>
+               </div>
+               <div class="tip">
+                  <p>Check the <a href="https://nomo.io/docs" target="_blank">API Docs</a>
+                     for a more complete reference.
+                  </p>
+               </div>
+               <div>
+                  <p><em>c. </em>Let’s imagine your PSP deposits the funds into our trust account now. Since we’re in the Sandbox and playing with funny money we actually need to fake this process. Go to the Sandbox section of the dashboard and pay in <em>£100.00</em>. This will cause the Lines above to be changed to <em>completed</em> state and money deposited into the specified accounts.</p>
+                  <p>The Dashboard will now show the Transactions and Wallet balances with their respective states changed to <em>completed.</em></p>
+               </div>
+               <div>
+                  <p><em>d. </em>
+                     Our webhook will inform you once the funds have left our trust account. Since we’re in the Sandbox, the funds will leave immediately.
+                  </p>
+                  <p>That’s it! You’ve just paid your first seller 😃</p>
+                  <p>
+                     Once you’re happy, we should probably speak commercials. Just complete our <a href="contact.html">contact form</a> and we’ll contact you.
+                  </p>
+               </div>
+            </section>
+            <!--section-->
+         </div>
+         <!--card-->
+      </div>
+      <!--wrapper-->
+      <footer>
+         <nav class="footer">
+            <div>
+               <h4>
+                  NOMO
+               </h4>
+               <ul>
+                  <li><a href="nomo.html">Home</a></li>
+                  <li><a href="features.html">Features</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="https://helpy.nomo.io/en">Help</a></li>
+                  <li><a href="https://nomo.blog/">Blog</a></li>
+               </ul>
+            </div>
+            <div>
+               <h4>
+                  Developers
+               </h4>
+               <ul>
+                  <li><a href="developers.html">Basic concepts</a></li>
+                  <li><a href="sandbox.html">Sandbox</a></li>
+                  <li><a href="https://nomo.io/docs" target="_blank">API Docs</a></li>
+                  <li><a href="https://nomo-engineering.slack.com/join/shared_invite/enQtMTkyNjU1NDIyNzA2LTU1ZGUyMDI4Njc4NWY5ZDZhOTgyYTM3M2RiZDRlZjMyZjJmNzY5NjMzZWUzODk4MTkxZjQ0OTM3M2VjMjk0MjI">NOMO Slack</a></li>
+               </ul>
+            </div>
+            <div>
+               <h4>
+                  Legal
+               </h4>
+               <ul>
+                  <li><a href="https://nomo.io/legal/privacy-statement.pdf">Privacy Statement</a></li>
+                  <li><a href="https://nomo.io/legal/terms-of-service.pdf">Terms of Service</a></li>
+                  <li><a href="https://nomo.io/legal/use-of-cookies.pdf">Use of Cookies</a></li>
+                  <li><a href="https://nomo.io/legal/platform-processing-terms.pdf">Platform Processing Terms</a></li>
+               </ul>
+            </div>
+         </nav>
+         <div class="disclaimer">
+            <div class="Docomo">
+               <p>NOMO is a product provided by <a href='https://www.docomodigital.com/'>DOCOMO Digital Ltd </a>
+                  . Powered by <a class="cc" href="https://www.currencycloud.com/">Currency Cloud</a>
+               </p>
+            </div>
+         </div>
+      </footer>
+      <div id="cookies">
+         <p>This website uses cookies to provide you with a personalised browsing experience.
+            By using this site you agree to our <a href="">Use of Cookies</a> as explanined in our <a href="">Privacy Statement </a>.
+            Please read our <a href="">Use of Cookies </a>for more information on how we use cookies and how you can manage them.
+         </p>
+         <button onclick="out()">Close</button>
+      </div>
+   </body>
+</html>

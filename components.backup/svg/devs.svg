@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="80px" viewBox="0 0 54 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>devs</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="desk" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="graphic" transform="translate(-317.000000, -847.000000)">
+            <g id="devs" transform="translate(284.000000, 827.000000)">
+                <rect id="Rectangle-42" fill="#FF0000" opacity="0" x="0" y="0" width="120" height="120"></rect>
+                <g id="dev" transform="translate(33.000000, 20.000000)">
+                    <g id="Group-17">
+                        <g id="Group">
+                            <rect id="Rectangle-29" fill="#002936" x="19" y="66" width="16" height="14"></rect>
+                            <rect id="Rectangle-28" fill="#002936" x="0" y="0" width="54" height="72" rx="4.50666667"></rect>
+                            <g id="Group-12" transform="translate(7.000000, 12.000000)">
+                                <rect id="Rectangle-31" fill="#17D6D8" x="5.47811796e-13" y="13" width="39" height="3" rx="1.5"></rect>
+                                <rect id="Rectangle-31" fill="#FFFFFF" x="5.47811796e-13" y="29" width="39" height="3" rx="1.5"></rect>
+                                <rect id="Rectangle-31" fill="#FFFFFF" x="5.47811796e-13" y="45" width="16" height="3" rx="1.5"></rect>
+                                <rect id="Rectangle-31" fill="#FFFFFF" x="20" y="45" width="16" height="3" rx="1.5"></rect>
+                                <rect id="Rectangle-31" fill="#FFFFFF" x="5.47811796e-13" y="37" width="39" height="3" rx="1.5"></rect>
+                                <rect id="Rectangle-31" fill="#FFFFFF" x="5.47811796e-13" y="21" width="15" height="3" rx="1.5"></rect>
+                                <rect id="Rectangle-31" fill="#FFFFFF" x="17" y="21" width="15" height="3" rx="1.5"></rect>
+                                <circle id="Oval-13" fill="#FFFFFF" cx="2" cy="1" r="1"></circle>
+                                <circle id="Oval-13" fill="#FFFFFF" cx="6" cy="1" r="1"></circle>
+                                <circle id="Oval-13" fill="#FFFFFF" cx="10" cy="1" r="1"></circle>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
