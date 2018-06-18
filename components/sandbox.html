@@ -10,6 +10,15 @@
    <body>
       <script src="cookies.js"></script>
       <script src="menu.js"></script>
+      <script src="modal.js"></script>
+      <div id="modal">
+         <p>
+            Add your API key first.
+         </p>
+         <div class="modalbuttons">
+            <button class="secondary" onclick="off()">Close</button>
+         </div>
+      </div>
       <div class="mobile" id="mobile-menu">
          <div class="menu">
             <button class="hamburger x" onclick="off()">
@@ -60,7 +69,7 @@
                   </p>
                </div>
                <div class="form">
-                  <form="#">
+                  <form="#" >
                   <fieldset>
                      <input type="text" placeholder="First name">
                      <input type="text" placeholder="Last name">
@@ -82,7 +91,7 @@
                   <p>Copy & paste your API key and follow the steps to complete your first payment</p>
                </div>
                <div class="form">
-                  <form="#">
+                  <form="#" id="apikey">
                   <fieldset>
                      <label for="apikey">Copy and paste the API key you've received:</label>
                      <input type="text" placeholder="API key" name="apikey">
@@ -112,7 +121,7 @@
                   <div class="head">
                   <div class="post">
                   <div><em>Post</em> <span class="url"> https://api.sandbox.nomo.io/v1/accounts</span>
-                  </div><button class="primary">Run</button>
+                  </div><a href="#apikey"><button class="primary" >Run</button></a>
                   </div>
 
                   <div class="request">
@@ -195,7 +204,7 @@
                   <div class="head">
                   <div class="post">
                   <div><em>Post</em> <span class="url"> https://api.sandbox.nomo.io/v1/accounts</span>
-                  </div><button class="primary">Run</button>
+                  </div><a href="#apikey"><button class="primary" >Run</button></a>
                   </div>
 
                   <div class="request">

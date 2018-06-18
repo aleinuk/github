@@ -139,7 +139,7 @@ header {
 grid-area: header;
 }
 
-.sidebar {
+aside {
 grid-area: menu;
 }
 
@@ -268,19 +268,19 @@ margin-right: 20px;
 text-align: right;
 }
 
-.sidebar {
+aside {
 background-color: rgba(0, 41, 54, 1);
 padding: 20px;
 box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 z-index: 100;
 }
 
-.sidebar a {
+aside a {
 display: block;
 margin-bottom: 20px;
 }
 
-.sidebar a.active {
+aside a.active {
 color: #fff;
 }
 
@@ -796,7 +796,7 @@ body {
 .db-grid {
 	 display: block;
 }
-.sidebar {
+aside {
 	 display: none;
 }
 header,
