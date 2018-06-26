@@ -457,7 +457,7 @@ input.error {
 p.errormsg {
    font-size: 14px;
    color: #EF8368;
-   margin: 10px 0;
+   margin: 10px 10px 25px 0;
 }
 
 figure {
@@ -871,13 +871,6 @@ figure.overview {
    }
 }
 
-#rocket {
-   transform: translate(0px, 0px) rotate(-10deg);
-   animation-name: rocketfly;
-   animation-iteration-count: infinite;
-   animation-duration: 0.1s;
-   animation-timing-function: ease;
-}
 
 #rocket2 {
    animation-name: rocketfly2;
@@ -895,14 +888,6 @@ figure.overview {
    }
 }
 
-@keyframes rocketfly {
-   0% {
-      transform: translate(210px, 5px) rotate(-10deg);
-   }
-   100% {
-      transform: translate(210px, 7px) rotate(-10deg);
-   }
-}
 
 @keyframes stars {
    0% {
@@ -1110,70 +1095,6 @@ figure.overview {
    }
 }
 
-@keyframes floatb {
-   0% {
-      transform: translate(0, 10px);
-      opacity: 0;
-   }
-   50% {
-      transform: translate(0, -100px);
-      opacity: 0.4;
-   }
-   100% {
-      transform: translate(0, -200px);
-      opacity: 0;
-   }
-}
-
-@keyframes floate {
-   0% {
-      transform: translate(10px, 0);
-      opacity: 0;
-   }
-   50% {
-      transform: translate(10px, -400px);
-      opacity: 1;
-   }
-   100% {
-      transform: translate(10px, -600px);
-      opacity: 0;
-   }
-}
-
-@keyframes floatc {
-   0% {
-      transform: translate(10px, 0);
-      opacity: 0;
-   }
-   50% {
-      transform: translate(10px, -600px);
-      opacity: 0.6;
-   }
-   100% {
-      transform: translate(10px, -1000px);
-      opacity: 0;
-   }
-}
-
-#cloudc {
-   opacity: 1;
-   transform: translate(0, 0);
-   transform-origin: 220px 220px;
-   animation-name: floatc;
-   animation-iteration-count: infinite;
-   animation-duration: 8s;
-   animation-timing-function: linear;
-}
-
-#cloude {
-   opacity: 1;
-   transform: translate(0, 0);
-   transform-origin: 220px 220px;
-   animation-name: floate;
-   animation-iteration-count: infinite;
-   animation-duration: 10s;
-   animation-timing-function: linear;
-}
 
 #clouda {
    transform: translate(0, 0);
@@ -1184,14 +1105,6 @@ figure.overview {
    animation-timing-function: linear;
 }
 
-#cloudb {
-   opacity: 0;
-   transform: translate(20px, 40px) rotate(0deg);
-   animation-name: floatb;
-   animation-iteration-count: infinite;
-   animation-duration: 24s;
-   animation-timing-function: linear;
-}
 
 #cloud6 {
    opacity: 0;
@@ -1200,15 +1113,6 @@ figure.overview {
    animation-iteration-count: infinite;
    animation-duration: 14s;
    animation-timing-function: linear;
-}
-
-@keyframes flyl {
-   0% {
-      transform: translate(67px, 23px) rotate(-360deg) translate(-67px, -23px);
-   }
-   100% {
-      transform: translate(67px, 23px) rotate(-361deg) translate(-67px, -23px);
-   }
 }
 
 @keyframes flyb {
@@ -1235,6 +1139,7 @@ figure.overview {
    animation-timing-function: linear;
    animation-iteration-count: infinite;
 }
+
 
 @keyframes hole {
    0% {
