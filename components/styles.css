@@ -549,7 +549,7 @@ input,
 textarea {
    font-family: "Open sans", helvetica, arial, sans-serif;
    background-color: #F0F6F8;
-   border: 1px solid #fafafa;
+   border: 1px solid rgba(0, 41, 54, 0.1);
    border-radius: 5px;
    display: block;
    font-size: 18px;
