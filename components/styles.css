@@ -1332,9 +1332,7 @@ figure.overview {
    label {
       margin-bottom: 10px;
       display: inline-block;
-      font-size: 12px;
-      text-transform: uppercase;
-      font-weight: 700;
+      font-size: 14px;
    }
    #mobile-menu {
       display: none;
