@@ -803,8 +803,11 @@ ul {
    background-image: url(svg/compliance.svg);
 }
 
+.benefits li:before  {
+  content: '✓';
+}
+
 .benefits li {
-   background-image: url(svg/benefitsok.svg);
    background-position: left center;
    background-repeat: no-repeat;
    display: block;
