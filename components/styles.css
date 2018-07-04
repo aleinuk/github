@@ -303,7 +303,6 @@ footer p {
     background-color: rgba(23, 214, 216, 0.9);
 }
 .price,.price2 {
-  color:#fff;
   padding:20px;
   border-radius: 5px;
 }
@@ -315,6 +314,7 @@ footer p {
 
 .price2 {
   background-color: rgba(0, 41, 54, 1);
+  color:#fff;
 }
 
  .head {
