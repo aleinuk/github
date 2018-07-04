@@ -296,7 +296,7 @@ footer p {
 }
 
 .price ul li:before,.price2 ul li:before  {
-  content: '✓';
+  content: '✓ ';
 }
 
 .price {
@@ -573,7 +573,7 @@ label {
 }
 
 input,
-textarea {
+textarea,select {
    font-family: "Open sans", helvetica, arial, sans-serif;
    background-color: #F0F6F8;
    border: 1px solid rgba(0, 41, 54, 0.1);
@@ -587,7 +587,7 @@ textarea {
 }
 
 input:hover,
-textarea:hover {
+textarea:hover,select {
    background-color: #FFF;
    border: 1px solid rgba(0, 41, 54, 0.1);
 }
@@ -804,7 +804,7 @@ ul {
 }
 
 .benefits li:before  {
-  content: '✓';
+  content: '✓ ';
 }
 
 .benefits li {
@@ -1416,7 +1416,7 @@ figure.overview {
    .mainnav {
       justify-content: center;
    }
-   input,
+   input,select,
    textarea {
       padding: 15px;
       font-size: 14px;
