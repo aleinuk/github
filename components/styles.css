@@ -291,6 +291,32 @@ footer p {
    word-break: break-all;
  }
 
+.price ul li , .price2 ul li {
+  margin-bottom: 20px;
+}
+
+.price ul li:before,.price2 ul li:before  {
+  content: '✓';
+}
+
+.price {
+    background-color: rgba(23, 214, 216, 0.9);
+}
+.price,.price2 {
+  color:#fff;
+  padding:20px;
+  border-radius: 5px;
+}
+
+.big {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.price2 {
+  background-color: rgba(0, 41, 54, 1);
+}
+
  .head {
    background-color: #F0F6F8;
    padding:20px;
@@ -719,8 +745,8 @@ ul {
    vertical-align: middle;
 }
 
-.API {
-   background-image: url(svg/API.svg);
+.payout{
+   background-image: url(svg/payouts.svg);
 }
 
 .seller {
@@ -764,12 +790,12 @@ ul {
    background-image: url(svg/sellers.svg);
 }
 
-.humansupport {
-   background-image: url(svg/humansupport.svg);
+.trusted {
+   background-image: url(svg/trusted.svg);
 }
 
-.support {
-   background-image: url(svg/support.svg);
+.payment{
+   background-image: url(svg/payment.svg);
 }
 
 .compliance {
