@@ -567,9 +567,7 @@ h4 {
 label {
    margin-bottom: 10px;
    display: inline-block;
-   font-size: 12px;
-   text-transform: uppercase;
-   font-weight: 700;
+   font-size: 14px;
 }
 
 input,
@@ -1332,7 +1330,7 @@ figure.overview {
    label {
       margin-bottom: 10px;
       display: inline-block;
-      font-size: 14px;
+      font-size: 12px;
    }
    #mobile-menu {
       display: none;
