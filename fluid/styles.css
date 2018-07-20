@@ -1224,7 +1224,7 @@ figure.overview {
    display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
    body {
       font-size: 3.2vw;
    }
@@ -1318,7 +1318,7 @@ figure.overview {
    }
    .mobile a {
       display: block;
-      padding: 2rem;
+      padding: 1rem;
       margin-bottom: 1rem;
       color: #fff;
       font-size: 4vw;
