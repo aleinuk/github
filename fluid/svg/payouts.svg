@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="90px" viewBox="0 0 90 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>payouts</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="desk" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="graphic" transform="translate(-124.000000, -540.000000)">
+            <g id="payouts" transform="translate(109.000000, 525.000000)">
+                <g>
+                    <rect id="Rectangle-42" fill="#FF0000" opacity="0" x="0" y="0" width="120" height="120"></rect>
+                    <g id="API" transform="translate(15.000000, 15.000000)">
+                        <g id="Group-24">
+                            <rect id="Rectangle-7" fill="#002936" x="0" y="0" width="90" height="90" rx="45"></rect>
+                            <g id="Group-23" transform="translate(18.000000, 31.000000)">
+                                <g id="Group-22" transform="translate(0.000000, 14.000000)" fill="#FFFFFF">
+                                    <g id="Group-10">
+                                        <g id="Group-15">
+                                            <rect id="Rectangle-43" x="3.42105263" y="0" width="9.57894737" height="2" rx="1"></rect>
+                                            <rect id="Rectangle-43" x="1.36842105" y="4" width="11.6315789" height="2" rx="1"></rect>
+                                            <rect id="Rectangle-43" x="0" y="8" width="13" height="2" rx="1"></rect>
+                                        </g>
+                                    </g>
+                                </g>
+                                <path d="M14.0016879,25.5 L14.0016879,13 L8.00168788,13 C6.97921901,13 6.61578017,11.6468677 7.50065161,11.1345737 L26.5006516,0.134573715 C26.810579,-0.0448579048 27.1927968,-0.0448579048 27.5027242,0.134573715 C27.5027242,0.134573715 33.8360575,3.80124038 46.5027242,11.1345737 C47.3875956,11.6468677 47.0241568,13 46.0016879,13 L40.0016879,13 L40.0016879,25.5 L45.0016879,25.5 C45.2778303,25.5 45.5016879,25.7238576 45.5016879,26 L45.5016879,31 C45.5016879,31.2761424 45.2778303,31.5 45.0016879,31.5 L8.00168788,31.5 C7.72554551,31.5 7.50168788,31.2761424 7.50168788,31 L7.50168788,26 C7.50168788,25.7238576 7.72554551,25.5 8.00168788,25.5 L14.0016879,25.5 Z M20.0016879,25.5 L24.0016879,25.5 L24.0016879,13 L20.0016879,13 L20.0016879,25.5 Z M30.0016879,25.5 L34.0016879,25.5 L34.0016879,13 L30.0016879,13 L30.0016879,25.5 Z" id="Combined-Shape" fill="#17D6D8"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-16" transform="translate(46.000000, 46.000000)"></g>
+            </g>
+        </g>
+    </g>
+</svg>

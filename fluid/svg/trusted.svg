@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="74px" height="66px" viewBox="0 0 74 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>trusted</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="desk" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="graphic" transform="translate(-316.000000, -107.000000)">
+            <g id="trusted" transform="translate(293.000000, 80.000000)">
+                <rect id="Rectangle-42" fill="#FF0000" opacity="0" x="0" y="0" width="120" height="120"></rect>
+                <g id="Group-3" transform="translate(23.000000, 27.000000)">
+                    <g id="Group-5" transform="translate(16.000000, 22.000000)"></g>
+                    <g id="Group-6" transform="translate(20.000000, 22.000000)"></g>
+                    <rect id="Rectangle-41" fill="#002936" x="0" y="0" width="37.3333333" height="66" rx="6.5"></rect>
+                    <rect id="Rectangle-4" stroke="#FFFFFF" fill="#FFFFFF" x="1.83333333" y="8.26470588" width="33.6666667" height="50.7647059" rx="1"></rect>
+                    <ellipse id="Oval-16" fill="#FFFFFF" cx="18.6666667" cy="62.1176471" rx="1.33333333" ry="1.29411765"></ellipse>
+                </g>
+                <g id="Group-26" transform="translate(64.000000, 73.000000)">
+                    <g id="Group-25" transform="translate(0.543860, 0.588235)" fill="#002936">
+                        <g id="Group-8">
+                            <g id="mc">
+                                <rect id="Rectangle-5" x="0" y="0" width="32.4561404" height="19.4117647" rx="1.82"></rect>
+                            </g>
+                        </g>
+                    </g>
+                    <ellipse id="Oval-25" fill="#FFFFFF" cx="20.3781676" cy="11.1764706" rx="3.60623782" ry="3.52941176"></ellipse>
+                    <ellipse id="Oval-25" fill="#17D6D8" cx="14.9688109" cy="11.1764706" rx="3.60623782" ry="3.52941176"></ellipse>
+                    <path d="M17.6734893,13.5110215 C17.1123917,12.8888452 16.7719298,12.0715704 16.7719298,11.1764706 C16.7719298,10.2813708 17.1123917,9.46409601 17.6734893,8.84191965 C18.2345869,9.46409601 18.5750487,10.2813708 18.5750487,11.1764706 C18.5750487,12.0715704 18.2345869,12.8888452 17.6734893,13.5110215 Z" id="Combined-Shape" fill="#FFFFFF" opacity="0.721651786"></path>
+                </g>
+                <g id="Group-26" transform="translate(30.000000, 40.000000)">
+                    <g id="Group-25" transform="translate(0.383901, 0.420168)" fill="#17D6D8">
+                        <g id="Group-8">
+                            <g id="mc">
+                                <rect id="Rectangle-5" x="0" y="0" width="22.9102167" height="13.8655462" rx="1.274"></rect>
+                            </g>
+                        </g>
+                    </g>
+                    <ellipse id="Oval-25" fill="#FFFFFF" cx="14.3845889" cy="7.98319328" rx="2.54557964" ry="2.5210084"></ellipse>
+                    <ellipse id="Oval-25" fill="#002936" cx="10.5662195" cy="7.98319328" rx="2.54557964" ry="2.5210084"></ellipse>
+                    <path d="M12.4754042,9.65072966 C12.0793353,9.20631798 11.8390093,8.6225503 11.8390093,7.98319328 C11.8390093,7.34383626 12.0793353,6.76006858 12.4754042,6.31565689 C12.8714731,6.76006858 13.1117991,7.34383626 13.1117991,7.98319328 C13.1117991,8.6225503 12.8714731,9.20631798 12.4754042,9.65072966 Z" id="Combined-Shape" fill="#FFFFFF" opacity="0.721651786"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

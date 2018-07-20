@@ -181,14 +181,14 @@ body {
    background-color: #fafafa;
    color: rgba(0, 41, 54, 1);
    font-family: 'Open sans', helvetica, arial, sans-serif;
-   font-size: 18px;
+   font-size: 1.6vw;
    margin: auto;
    -webkit-font-smoothing: antialiased;
    text-rendering: optimizeLegibility;
-   min-height: 100vh;
+   min-height: 100vw;
 }
 
-button {
+button  {
    font-family: 'Open sans', helvetica, arial, sans-serif;
    font-weight: 700;
    border-radius: 5px;
@@ -199,9 +199,9 @@ button {
    padding: 10px;
    text-align: center;
    width: 100%;
-   max-width: 200px;
+   max-width: 50%;
    background-color: #fff;
-   font-size: 18px;
+   font-size: 1.8vw;
 }
 
 
@@ -227,7 +227,7 @@ button:active {
 }
 
 .disclaimer {
-   font-size: 12px;
+   font-size: 1.33vw;
    padding: 20px 0;
    width: 100%;
    opacity: 0.4;
@@ -247,7 +247,7 @@ footer p {
 }
 
 .disclaimer a {
-   font-size: 12px;
+   font-size: 1.33vw;
    padding: 0;
    font-weight: 800;
 }
@@ -273,7 +273,7 @@ footer p {
 }
 
 .code {
-   font-size: 14px;
+   font-size: 1.6vw;
    color: #fff;
    background: rgba(0, 41, 54, 1);
    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
@@ -286,7 +286,7 @@ footer p {
 }
 
 .url {
-   font-size: 14px;
+   font-size: 1.6vw;
    color:rgba(0, 41, 54, 0.5);
    word-break: break-all;
  }
@@ -322,12 +322,12 @@ footer p {
    background-color: #F0F6F8;
    padding:20px;
    border-radius: 5px;
-   font-size: 14px;
+   font-size: 1.6vw;
  }
 
  .head button {
-   font-size: 14px;
-   width:100px;
+   font-size: 1.6vw;
+   width:50%;
  }
 
 .tip {
@@ -337,7 +337,7 @@ footer p {
    justify-content: center;
    border-radius: 5px;
    margin-bottom: 40px;
-   font-size: 28px;
+   font-size: 3.2vw;
    padding: 40px;
 }
 
@@ -365,7 +365,7 @@ ul.features li {
    position: fixed;
    display: flex;
    bottom: 0;
-   font-size: 12px;
+   font-size: 1.33vw;
    padding: 10px;
    align-items: center;
    justify-content: center;
@@ -373,8 +373,8 @@ ul.features li {
 }
 
 #cookies button {
-   font-size: 12px;
-   max-width: 80px;
+   font-size: 1.33vw;
+   max-width: 50%;
    margin: 20px;
 }
 
@@ -482,7 +482,7 @@ input.error {
 }
 
 p.errormsg {
-   font-size: 14px;
+   font-size: 1.6vw;
    color: #EF8368;
    margin: 10px 10px 25px 0;
 }
@@ -506,7 +506,7 @@ footer nav li {
 }
 
 footer a {
-   font-size: 14px;
+   font-size: 1.6vw;
    padding: 10px 0;
    display: inline-block;
    color: #fff;
@@ -538,22 +538,22 @@ footer nav {
 }
 
 h1 {
-   font-size: 40px;
+   font-size: 3.4vw;
    margin-bottom: 40px;
 }
 
 h2 {
-   font-size: 32px;
+   font-size: 2.6vw;
    margin-bottom: 20px;
 }
 
 h3 {
-   font-size: 24px;
+   font-size: 2.2vw;
    margin-bottom: 20px;
 }
 
 h4 {
-   font-size: 20px;
+   font-size: 1.8vw;
    margin-bottom: 20px;
 }
 
@@ -567,7 +567,7 @@ h4 {
 label {
    margin-bottom: 10px;
    display: inline-block;
-   font-size: 14px;
+   font-size: 1.6vw;
 }
 
 input,
@@ -577,7 +577,7 @@ textarea,select {
    border: 1px solid rgba(0, 41, 54, 0.1);
    border-radius: 5px;
    display: block;
-   font-size: 18px;
+   font-size: 1.6vw;
    margin-bottom: 20px;
    padding: 20px;
    outline: none;
@@ -641,6 +641,11 @@ textarea:hover,select {
    animation-timing-function: linear;
 }
 
+a.login {
+  color: rgba(23, 214, 216, 1);;
+
+}
+
 .wrapper {
    min-height: 100vh;
    overflow: hidden;
@@ -674,7 +679,7 @@ textarea:hover,select {
    padding: 20px;
    position: absolute;
    width: 100%;
-   height: 100vh;
+   height: 100vw;
    z-index: 2500;
    overflow: hidden;
    display: none;
@@ -1289,19 +1294,19 @@ figure.overview {
 
 @media only screen and (max-width: 600px) {
    body {
-      font-size: 14px;
+      font-size: 3.2vw;
    }
    h1 {
-      font-size: 32px;
+      font-size: 7vw;
    }
    h2 {
-      font-size: 24px;
+      font-size: 5.2vw;
    }
    h3 {
-      font-size: 20px;
+      font-size: 4.4vw;
    }
    h4 {
-      font-size: 16px;
+      font-size: 4vw;
    }
    p {
       margin: 0 0 20px 0;
@@ -1320,8 +1325,8 @@ figure.overview {
       background-color: rgba(23, 214, 216, 1);
       padding: 10px;
       color: #fff;
-      font-size: 18px;
-      min-width: 44px;
+      font-size: 3.2vw;
+      min-width: 20%;
       margin: 0;
    }
    .mainnav {
@@ -1330,7 +1335,7 @@ figure.overview {
    label {
       margin-bottom: 10px;
       display: inline-block;
-      font-size: 12px;
+      font-size: 3vw;
    }
    #mobile-menu {
       display: none;
@@ -1350,8 +1355,8 @@ figure.overview {
    }
 
    #cookies button {
-      font-size: 12px;
-      max-width: 80px;
+      font-size: 3vw;
+      max-width: 50%;
       margin: 20px 20px 20px 0;
    }
 
@@ -1384,17 +1389,18 @@ figure.overview {
       padding: 20px;
       margin-bottom: 10px;
       color: #fff;
-      font-size: 18px;
+      font-size: 4vw;
    }
    .mobile a:hover {
       color: rgba(255, 255, 255, 0.6);
    }
    #cookies {
       display: block;
+      font-size: 3vw;
    }
    button {
       margin-bottom: 20px;
-      font-size: 14px;
+      font-size: 3.2vw;
    }
    .card {
       overflow: hidden;
@@ -1415,11 +1421,16 @@ figure.overview {
    input,select,
    textarea {
       padding: 15px;
-      font-size: 14px;
+      font-size: 3.2vw;
    }
    footer {
       padding: 20px;
+      font-size:3.2vw;
    }
+   footer a {
+      font-size:3.2vw;
+   }
+
    .features {
       text-align: center;
    }
@@ -1431,4 +1442,27 @@ figure.overview {
    p {
       padding: 0 0 10px 0;
    }
+   .disclaimer,.disclaimer a {
+      font-size: 3vw;
+
+   }
+
+   .code {
+      font-size: 3.2vw;
+
+   }
+
+   .url {
+      font-size: 3.2vw;
+
+    }
+
+    .head {
+      font-size: 3.2vw;
+    }
+
+    .head button {
+      font-size: 3.2vw;
+    }
+
 }
